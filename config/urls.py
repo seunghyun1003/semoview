@@ -1,8 +1,22 @@
 from django.contrib import admin
-from django.urls import path
-from . import views #추가
+from django.urls import path, include
+from api import views #추가
+from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token, verify_jwt_token #추가
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.HomeView.as_view(), name='home'), #추가
+    #회원가입을 위한 url
+    path('rest-auth/signup/', include('rest_auth.registration.urls')),
+    #로그인/로그아웃을 위한 url
+    path('rest-auth/', include('rest_auth.urls')),
+    #로그인 토큰 받기 위한 url
+    path('api-token-auth/obtain_token/', obtain_jwt_token),  # JWT 토큰 획득
+    path('api-jwt-auth/refresh/', refresh_jwt_token), # JWT 토큰 갱신
+    path('api-jwt-auth/verify/', verify_jwt_token),   # JWT 토큰 확인
+
+    path('', views.index, name='index'),
+    path('stages', views.stagelist, name='stagelist'),
+    path('reviews/<stage_pk>', views.thisStageReviewlist, name='thisStageReviewlist'),
+
+    path('stage/<stage_pk>/create', views.thisStageReviewCreate, name='thisStageReviewCreate'),
 ]

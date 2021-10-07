@@ -12,17 +12,50 @@
         </button>
       </div>
       <div class="nav-item">
-        <router-link to="/myreview">
-          <b-icon icon="person-fill">-</b-icon>
-        </router-link>
+        <b-nav-item-dropdown
+          id="my-nav-dropdown"
+          text="username"
+          toggle-class="nav-link-custom"
+          right
+        >
+          <b-dropdown-item v-if="isLogin">
+            <router-link :to="{ name: 'Write' }">리뷰 작성</router-link>
+            <div></div>
+            <router-link :to="{ name: 'MyReview' }">작성한 리뷰</router-link>
+            <b-dropdown-divider></b-dropdown-divider>
+            <button @click="logout">Logout</button>
+          </b-dropdown-item>
+          <b-dropdown-item v-else router-link :to="{ name: 'Login' }">Login
+          </b-dropdown-item>
+        </b-nav-item-dropdown>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'Nav',
+  data: function () {
+    return {
+      isLogin : false,
+    }
+  },
+  methods: {
+    logout: function () {
+      localStorage.removeItem('jwt'),
+      this.$router.go()
+      this.$router.push({ name : 'Home'})
+    }
+  },
+  created : function(){
+    // 로컬스토리지에 jwt 이 존재하는지에 따라 로그인 여부 판단하기
+    const token = localStorage.getItem('jwt')
+    if(token){
+      this.isLogin = true
+    }
+  }
 }
 </script>
 
@@ -35,6 +68,9 @@ export default {
   background-color: rgb(192, 57, 43);
   justify-content: space-between;
   padding: 0 1em;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 .logo {
   font-size: 1.2em;
@@ -47,11 +83,14 @@ export default {
   padding:0;
   text-decoration:none
 }
+a > a{
+  text-decoration-line: none;
+  color: black;
+  font-weight: bold;
+}
 .nav-menu{
   display: flex;
-}
-.nav-item{
-  padding: 0 0.75em;
+  justify-content: end;
 }
 .nav-item > button,
 .nav-item > a{
