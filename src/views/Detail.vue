@@ -61,6 +61,7 @@
 <script>
 import axios from 'axios'
 import StarRating from 'vue-star-rating'
+import jwt_decode from "jwt-decode";
 
 export default {
   name: 'Detail',
@@ -129,11 +130,13 @@ export default {
         if (this.form.content === 0) {
             alert('별점을 선택해주세요.')
         } 
-        console.log(this.$route.params.contentId, this.form.point, this.form.content)
+        
+        const userId = jwt_decode(localStorage.getItem('jwt')).user_id;
+
         const url = `http://127.0.0.1:8000/stage/${this.$route.params.contentId}/create`
         axios.post(url, {
             headers : this.setToken(),
-            user_id : 1,
+            user_id : userId,
             stage_id : this.$route.params.contentId,
             point : this.form.point,
             reviewContents : this.form.content,
@@ -154,7 +157,7 @@ export default {
         this.form.content = ''
         this.form.point = 0
         console.log("작성취소")
-        this.isShow = true
+        this.isShow = false
     },
     deleteReview: function (review) {
         axios({

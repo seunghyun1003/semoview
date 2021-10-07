@@ -19,8 +19,6 @@
           right
         >
           <b-dropdown-item v-if="isLogin">
-            <router-link :to="{ name: 'Write' }">리뷰 작성</router-link>
-            <div></div>
             <router-link :to="{ name: 'MyReview' }">작성한 리뷰</router-link>
             <b-dropdown-divider></b-dropdown-divider>
             <button @click="logout">Logout</button>
@@ -45,8 +43,8 @@ export default {
   methods: {
     logout: function () {
       localStorage.removeItem('jwt'),
+      this.$router.push({ name : 'Login'})
       this.$router.go()
-      this.$router.push({ name : 'Home'})
     }
   },
   created : function(){

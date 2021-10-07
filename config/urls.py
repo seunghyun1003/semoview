@@ -17,6 +17,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('stages', views.stagelist, name='stagelist'),
     path('reviews/<stage_pk>', views.thisStageReviewlist, name='thisStageReviewlist'),
+    
+    path('get/myreviews/userId/<user_Id>', views.MyReviewlist, name='MyReviewlist'),
 
     path('stage/<stage_pk>/create', views.thisStageReviewCreate, name='thisStageReviewCreate'),
 ]

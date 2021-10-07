@@ -77,6 +77,23 @@ def thisStageReviewDelete(request, review_pk):
         review.delete()
         return Response({ 'id': review_pk })
 
+def MyReviewlist(request, user_Id):
+    reviews = Review.objects.all()
+    myReviews = reviews.filter(user_id = user_Id)
+    myreview_list = []
+
+    for myReview in myReviews:
+        myreview_list.append({
+            'id': myReview.id, 
+            'stage_id': myReview.stage_id.id, 
+            'user_id': myReview.user_id.id, 
+            'user_username': myReview.user_id.username, 
+            'reviewContents': myReview.reviewContents, 
+            'point': myReview.point, 
+            'created_at': myReview.created_at, 
+            'updated_at': myReview.updated_at})
+    return JsonResponse(myreview_list, safe=False)
+
 @api_view(['POST'])
 @permission_classes([AllowAny, ]) #모든 사용자 접근가능
 def signup(request):

@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
+import Nav from './components/Nav.vue';
 
 export default {
   name: 'App',
@@ -26,10 +26,10 @@ export default {
     Nav
   },
   methods: {
-    ScrollTop() {
+    ScrollTop: function () {
       this.$router.go("#");
-    }
-  }
+    },
+  },
 }
 </script>
 

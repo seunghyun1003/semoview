@@ -41,17 +41,16 @@ export default {
                 data : this.credentials,
             })
             .then(res => {
-                console.log(res)
                 // 로컬스토리지에 토큰 저장
                 localStorage.setItem('jwt', res.data.token)
-            
+                
                 this.$router.push({ name : 'Home'})
-                this.$router.go();
+                this.$router.go()
             })
             .catch(err => {
                 console.log(err)
             })
-        }
-    }
+        },
+    },
 }
 </script>
