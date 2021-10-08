@@ -16,454 +16,463 @@
       "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\favicon.ico",
       "publicPath": "http://127.0.0.1:8080/favicon.ico"
     },
-    "index.b9c4e1c61d4fa702e8f3.hot-update.js": {
-      "name": "index.b9c4e1c61d4fa702e8f3.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.b9c4e1c61d4fa702e8f3.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.b9c4e1c61d4fa702e8f3.hot-update.js"
-    },
-    "b9c4e1c61d4fa702e8f3.hot-update.json": {
-      "name": "b9c4e1c61d4fa702e8f3.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\b9c4e1c61d4fa702e8f3.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/b9c4e1c61d4fa702e8f3.hot-update.json"
-    },
-    "index.639d33e341dd14846784.hot-update.js": {
-      "name": "index.639d33e341dd14846784.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.639d33e341dd14846784.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.639d33e341dd14846784.hot-update.js"
-    },
-    "639d33e341dd14846784.hot-update.json": {
-      "name": "639d33e341dd14846784.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\639d33e341dd14846784.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/639d33e341dd14846784.hot-update.json"
-    },
-    "index.bdb57febcb6ecaf9abb4.hot-update.js": {
-      "name": "index.bdb57febcb6ecaf9abb4.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.bdb57febcb6ecaf9abb4.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.bdb57febcb6ecaf9abb4.hot-update.js"
-    },
-    "bdb57febcb6ecaf9abb4.hot-update.json": {
-      "name": "bdb57febcb6ecaf9abb4.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\bdb57febcb6ecaf9abb4.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/bdb57febcb6ecaf9abb4.hot-update.json"
-    },
-    "index.52305864cfe6ea989bd4.hot-update.js": {
-      "name": "index.52305864cfe6ea989bd4.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.52305864cfe6ea989bd4.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.52305864cfe6ea989bd4.hot-update.js"
-    },
-    "52305864cfe6ea989bd4.hot-update.json": {
-      "name": "52305864cfe6ea989bd4.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\52305864cfe6ea989bd4.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/52305864cfe6ea989bd4.hot-update.json"
-    },
-    "index.a4f3efbaa2094ed6b2d0.hot-update.js": {
-      "name": "index.a4f3efbaa2094ed6b2d0.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.a4f3efbaa2094ed6b2d0.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.a4f3efbaa2094ed6b2d0.hot-update.js"
-    },
-    "a4f3efbaa2094ed6b2d0.hot-update.json": {
-      "name": "a4f3efbaa2094ed6b2d0.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\a4f3efbaa2094ed6b2d0.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/a4f3efbaa2094ed6b2d0.hot-update.json"
-    },
-    "index.1b9c83942dd7cadedcf9.hot-update.js": {
-      "name": "index.1b9c83942dd7cadedcf9.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.1b9c83942dd7cadedcf9.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.1b9c83942dd7cadedcf9.hot-update.js"
-    },
-    "1b9c83942dd7cadedcf9.hot-update.json": {
-      "name": "1b9c83942dd7cadedcf9.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\1b9c83942dd7cadedcf9.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/1b9c83942dd7cadedcf9.hot-update.json"
-    },
-    "index.1d4ecd505d676976c740.hot-update.js": {
-      "name": "index.1d4ecd505d676976c740.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.1d4ecd505d676976c740.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.1d4ecd505d676976c740.hot-update.js"
-    },
-    "1d4ecd505d676976c740.hot-update.json": {
-      "name": "1d4ecd505d676976c740.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\1d4ecd505d676976c740.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/1d4ecd505d676976c740.hot-update.json"
-    },
-    "index.c82ec0fb671dbba9af57.hot-update.js": {
-      "name": "index.c82ec0fb671dbba9af57.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.c82ec0fb671dbba9af57.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.c82ec0fb671dbba9af57.hot-update.js"
-    },
-    "c82ec0fb671dbba9af57.hot-update.json": {
-      "name": "c82ec0fb671dbba9af57.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\c82ec0fb671dbba9af57.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/c82ec0fb671dbba9af57.hot-update.json"
-    },
-    "index.d4e0494d478127298e68.hot-update.js": {
-      "name": "index.d4e0494d478127298e68.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.d4e0494d478127298e68.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.d4e0494d478127298e68.hot-update.js"
-    },
-    "d4e0494d478127298e68.hot-update.json": {
-      "name": "d4e0494d478127298e68.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\d4e0494d478127298e68.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/d4e0494d478127298e68.hot-update.json"
-    },
-    "index.fe0667a50519f94b242f.hot-update.js": {
-      "name": "index.fe0667a50519f94b242f.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.fe0667a50519f94b242f.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.fe0667a50519f94b242f.hot-update.js"
-    },
-    "fe0667a50519f94b242f.hot-update.json": {
-      "name": "fe0667a50519f94b242f.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\fe0667a50519f94b242f.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/fe0667a50519f94b242f.hot-update.json"
-    },
-    "index.f62899fd78b07466a83d.hot-update.js": {
-      "name": "index.f62899fd78b07466a83d.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.f62899fd78b07466a83d.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.f62899fd78b07466a83d.hot-update.js"
-    },
-    "f62899fd78b07466a83d.hot-update.json": {
-      "name": "f62899fd78b07466a83d.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\f62899fd78b07466a83d.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/f62899fd78b07466a83d.hot-update.json"
-    },
-    "index.c635040e5dd0e28d7751.hot-update.js": {
-      "name": "index.c635040e5dd0e28d7751.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.c635040e5dd0e28d7751.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.c635040e5dd0e28d7751.hot-update.js"
-    },
-    "c635040e5dd0e28d7751.hot-update.json": {
-      "name": "c635040e5dd0e28d7751.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\c635040e5dd0e28d7751.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/c635040e5dd0e28d7751.hot-update.json"
-    },
-    "index.ceee6727ec3bd4df364a.hot-update.js": {
-      "name": "index.ceee6727ec3bd4df364a.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.ceee6727ec3bd4df364a.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.ceee6727ec3bd4df364a.hot-update.js"
-    },
-    "ceee6727ec3bd4df364a.hot-update.json": {
-      "name": "ceee6727ec3bd4df364a.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\ceee6727ec3bd4df364a.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/ceee6727ec3bd4df364a.hot-update.json"
-    },
-    "index.b5919a7a1f750eece90f.hot-update.js": {
-      "name": "index.b5919a7a1f750eece90f.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.b5919a7a1f750eece90f.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.b5919a7a1f750eece90f.hot-update.js"
-    },
-    "b5919a7a1f750eece90f.hot-update.json": {
-      "name": "b5919a7a1f750eece90f.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\b5919a7a1f750eece90f.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/b5919a7a1f750eece90f.hot-update.json"
-    },
-    "index.e9f384545e939ab2f10e.hot-update.js": {
-      "name": "index.e9f384545e939ab2f10e.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.e9f384545e939ab2f10e.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.e9f384545e939ab2f10e.hot-update.js"
-    },
-    "e9f384545e939ab2f10e.hot-update.json": {
-      "name": "e9f384545e939ab2f10e.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\e9f384545e939ab2f10e.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/e9f384545e939ab2f10e.hot-update.json"
-    },
-    "index.c9479f86d6730fa2ec86.hot-update.js": {
-      "name": "index.c9479f86d6730fa2ec86.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.c9479f86d6730fa2ec86.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.c9479f86d6730fa2ec86.hot-update.js"
-    },
-    "c9479f86d6730fa2ec86.hot-update.json": {
-      "name": "c9479f86d6730fa2ec86.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\c9479f86d6730fa2ec86.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/c9479f86d6730fa2ec86.hot-update.json"
-    },
-    "index.45d8788a4c0c15bf8a24.hot-update.js": {
-      "name": "index.45d8788a4c0c15bf8a24.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.45d8788a4c0c15bf8a24.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.45d8788a4c0c15bf8a24.hot-update.js"
-    },
-    "45d8788a4c0c15bf8a24.hot-update.json": {
-      "name": "45d8788a4c0c15bf8a24.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\45d8788a4c0c15bf8a24.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/45d8788a4c0c15bf8a24.hot-update.json"
-    },
-    "d7bb7ebee6612e7c6f2c.hot-update.json": {
-      "name": "d7bb7ebee6612e7c6f2c.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\d7bb7ebee6612e7c6f2c.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/d7bb7ebee6612e7c6f2c.hot-update.json"
-    },
-    "index.f41b86f1ce380602a14f.hot-update.js": {
-      "name": "index.f41b86f1ce380602a14f.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.f41b86f1ce380602a14f.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.f41b86f1ce380602a14f.hot-update.js"
-    },
-    "f41b86f1ce380602a14f.hot-update.json": {
-      "name": "f41b86f1ce380602a14f.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\f41b86f1ce380602a14f.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/f41b86f1ce380602a14f.hot-update.json"
-    },
-    "index.5bd690e25cb43bfea1fc.hot-update.js": {
-      "name": "index.5bd690e25cb43bfea1fc.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.5bd690e25cb43bfea1fc.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.5bd690e25cb43bfea1fc.hot-update.js"
-    },
-    "5bd690e25cb43bfea1fc.hot-update.json": {
-      "name": "5bd690e25cb43bfea1fc.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\5bd690e25cb43bfea1fc.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/5bd690e25cb43bfea1fc.hot-update.json"
-    },
-    "index.d1ad8c347688019d5fbf.hot-update.js": {
-      "name": "index.d1ad8c347688019d5fbf.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.d1ad8c347688019d5fbf.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.d1ad8c347688019d5fbf.hot-update.js"
-    },
-    "d1ad8c347688019d5fbf.hot-update.json": {
-      "name": "d1ad8c347688019d5fbf.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\d1ad8c347688019d5fbf.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/d1ad8c347688019d5fbf.hot-update.json"
-    },
-    "index.b3caf469243d036b3a98.hot-update.js": {
-      "name": "index.b3caf469243d036b3a98.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.b3caf469243d036b3a98.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.b3caf469243d036b3a98.hot-update.js"
-    },
-    "b3caf469243d036b3a98.hot-update.json": {
-      "name": "b3caf469243d036b3a98.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\b3caf469243d036b3a98.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/b3caf469243d036b3a98.hot-update.json"
-    },
-    "index.70d44c9cb7a53dce9ce6.hot-update.js": {
-      "name": "index.70d44c9cb7a53dce9ce6.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.70d44c9cb7a53dce9ce6.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.70d44c9cb7a53dce9ce6.hot-update.js"
-    },
-    "70d44c9cb7a53dce9ce6.hot-update.json": {
-      "name": "70d44c9cb7a53dce9ce6.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\70d44c9cb7a53dce9ce6.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/70d44c9cb7a53dce9ce6.hot-update.json"
-    },
-    "index.1b5a44f73c900b7df101.hot-update.js": {
-      "name": "index.1b5a44f73c900b7df101.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.1b5a44f73c900b7df101.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.1b5a44f73c900b7df101.hot-update.js"
-    },
-    "1b5a44f73c900b7df101.hot-update.json": {
-      "name": "1b5a44f73c900b7df101.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\1b5a44f73c900b7df101.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/1b5a44f73c900b7df101.hot-update.json"
-    },
-    "index.090bf6e3e62e9d0f27e7.hot-update.js": {
-      "name": "index.090bf6e3e62e9d0f27e7.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.090bf6e3e62e9d0f27e7.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.090bf6e3e62e9d0f27e7.hot-update.js"
-    },
-    "090bf6e3e62e9d0f27e7.hot-update.json": {
-      "name": "090bf6e3e62e9d0f27e7.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\090bf6e3e62e9d0f27e7.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/090bf6e3e62e9d0f27e7.hot-update.json"
-    },
-    "index.66d69ece1aa3ae343dbc.hot-update.js": {
-      "name": "index.66d69ece1aa3ae343dbc.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.66d69ece1aa3ae343dbc.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.66d69ece1aa3ae343dbc.hot-update.js"
-    },
-    "66d69ece1aa3ae343dbc.hot-update.json": {
-      "name": "66d69ece1aa3ae343dbc.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\66d69ece1aa3ae343dbc.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/66d69ece1aa3ae343dbc.hot-update.json"
-    },
-    "index.28025ae24e23b8863bfc.hot-update.js": {
-      "name": "index.28025ae24e23b8863bfc.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.28025ae24e23b8863bfc.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.28025ae24e23b8863bfc.hot-update.js"
-    },
-    "28025ae24e23b8863bfc.hot-update.json": {
-      "name": "28025ae24e23b8863bfc.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\28025ae24e23b8863bfc.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/28025ae24e23b8863bfc.hot-update.json"
-    },
-    "index.1f932b7b5e6b625231de.hot-update.js": {
-      "name": "index.1f932b7b5e6b625231de.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.1f932b7b5e6b625231de.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.1f932b7b5e6b625231de.hot-update.js"
-    },
-    "1f932b7b5e6b625231de.hot-update.json": {
-      "name": "1f932b7b5e6b625231de.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\1f932b7b5e6b625231de.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/1f932b7b5e6b625231de.hot-update.json"
-    },
-    "index.6014ee03c1c5215944f2.hot-update.js": {
-      "name": "index.6014ee03c1c5215944f2.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.6014ee03c1c5215944f2.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.6014ee03c1c5215944f2.hot-update.js"
-    },
-    "6014ee03c1c5215944f2.hot-update.json": {
-      "name": "6014ee03c1c5215944f2.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\6014ee03c1c5215944f2.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/6014ee03c1c5215944f2.hot-update.json"
-    },
-    "index.9a03f85afd1dd9f83e1b.hot-update.js": {
-      "name": "index.9a03f85afd1dd9f83e1b.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.9a03f85afd1dd9f83e1b.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.9a03f85afd1dd9f83e1b.hot-update.js"
-    },
-    "9a03f85afd1dd9f83e1b.hot-update.json": {
-      "name": "9a03f85afd1dd9f83e1b.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\9a03f85afd1dd9f83e1b.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/9a03f85afd1dd9f83e1b.hot-update.json"
-    },
-    "index.a86ec9a164b423028083.hot-update.js": {
-      "name": "index.a86ec9a164b423028083.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.a86ec9a164b423028083.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.a86ec9a164b423028083.hot-update.js"
-    },
-    "a86ec9a164b423028083.hot-update.json": {
-      "name": "a86ec9a164b423028083.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\a86ec9a164b423028083.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/a86ec9a164b423028083.hot-update.json"
-    },
-    "index.230cbbd22df9460fa068.hot-update.js": {
-      "name": "index.230cbbd22df9460fa068.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.230cbbd22df9460fa068.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.230cbbd22df9460fa068.hot-update.js"
-    },
-    "230cbbd22df9460fa068.hot-update.json": {
-      "name": "230cbbd22df9460fa068.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\230cbbd22df9460fa068.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/230cbbd22df9460fa068.hot-update.json"
-    },
-    "index.945b9ef860373d72f48d.hot-update.js": {
-      "name": "index.945b9ef860373d72f48d.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.945b9ef860373d72f48d.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.945b9ef860373d72f48d.hot-update.js"
-    },
-    "945b9ef860373d72f48d.hot-update.json": {
-      "name": "945b9ef860373d72f48d.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\945b9ef860373d72f48d.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/945b9ef860373d72f48d.hot-update.json"
-    },
-    "02142e38d41fc3a3fa7a.hot-update.json": {
-      "name": "02142e38d41fc3a3fa7a.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\02142e38d41fc3a3fa7a.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/02142e38d41fc3a3fa7a.hot-update.json"
-    },
-    "index.f847f97214ba8c811d6e.hot-update.js": {
-      "name": "index.f847f97214ba8c811d6e.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.f847f97214ba8c811d6e.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.f847f97214ba8c811d6e.hot-update.js"
-    },
-    "f847f97214ba8c811d6e.hot-update.json": {
-      "name": "f847f97214ba8c811d6e.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\f847f97214ba8c811d6e.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/f847f97214ba8c811d6e.hot-update.json"
-    },
-    "index.7cfaa8afd09c404b2340.hot-update.js": {
-      "name": "index.7cfaa8afd09c404b2340.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.7cfaa8afd09c404b2340.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.7cfaa8afd09c404b2340.hot-update.js"
-    },
-    "7cfaa8afd09c404b2340.hot-update.json": {
-      "name": "7cfaa8afd09c404b2340.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\7cfaa8afd09c404b2340.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/7cfaa8afd09c404b2340.hot-update.json"
-    },
-    "index.a53210bf7d530bc6d9b3.hot-update.js": {
-      "name": "index.a53210bf7d530bc6d9b3.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.a53210bf7d530bc6d9b3.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.a53210bf7d530bc6d9b3.hot-update.js"
-    },
-    "a53210bf7d530bc6d9b3.hot-update.json": {
-      "name": "a53210bf7d530bc6d9b3.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\a53210bf7d530bc6d9b3.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/a53210bf7d530bc6d9b3.hot-update.json"
-    },
-    "index.6e4c6f377caa5534b297.hot-update.js": {
-      "name": "index.6e4c6f377caa5534b297.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.6e4c6f377caa5534b297.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.6e4c6f377caa5534b297.hot-update.js"
-    },
-    "6e4c6f377caa5534b297.hot-update.json": {
-      "name": "6e4c6f377caa5534b297.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\6e4c6f377caa5534b297.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/6e4c6f377caa5534b297.hot-update.json"
-    },
-    "index.528f699843542d1a93b8.hot-update.js": {
-      "name": "index.528f699843542d1a93b8.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.528f699843542d1a93b8.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.528f699843542d1a93b8.hot-update.js"
-    },
-    "528f699843542d1a93b8.hot-update.json": {
-      "name": "528f699843542d1a93b8.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\528f699843542d1a93b8.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/528f699843542d1a93b8.hot-update.json"
-    },
-    "index.1c3a2a93d80b62c72612.hot-update.js": {
-      "name": "index.1c3a2a93d80b62c72612.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.1c3a2a93d80b62c72612.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.1c3a2a93d80b62c72612.hot-update.js"
-    },
-    "1c3a2a93d80b62c72612.hot-update.json": {
-      "name": "1c3a2a93d80b62c72612.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\1c3a2a93d80b62c72612.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/1c3a2a93d80b62c72612.hot-update.json"
-    },
-    "index.307ebc39a58729070ab0.hot-update.js": {
-      "name": "index.307ebc39a58729070ab0.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.307ebc39a58729070ab0.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.307ebc39a58729070ab0.hot-update.js"
-    },
-    "307ebc39a58729070ab0.hot-update.json": {
-      "name": "307ebc39a58729070ab0.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\307ebc39a58729070ab0.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/307ebc39a58729070ab0.hot-update.json"
-    },
-    "index.c83e6ed11f4415a3ed5b.hot-update.js": {
-      "name": "index.c83e6ed11f4415a3ed5b.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.c83e6ed11f4415a3ed5b.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.c83e6ed11f4415a3ed5b.hot-update.js"
-    },
-    "c83e6ed11f4415a3ed5b.hot-update.json": {
-      "name": "c83e6ed11f4415a3ed5b.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\c83e6ed11f4415a3ed5b.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/c83e6ed11f4415a3ed5b.hot-update.json"
-    },
-    "index.ee15d4bcd58a6fa99038.hot-update.js": {
-      "name": "index.ee15d4bcd58a6fa99038.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.ee15d4bcd58a6fa99038.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.ee15d4bcd58a6fa99038.hot-update.js"
-    },
-    "ee15d4bcd58a6fa99038.hot-update.json": {
-      "name": "ee15d4bcd58a6fa99038.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\ee15d4bcd58a6fa99038.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/ee15d4bcd58a6fa99038.hot-update.json"
-    },
-    "index.5472597358f0f89ed948.hot-update.js": {
-      "name": "index.5472597358f0f89ed948.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.5472597358f0f89ed948.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.5472597358f0f89ed948.hot-update.js"
-    },
-    "5472597358f0f89ed948.hot-update.json": {
-      "name": "5472597358f0f89ed948.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\5472597358f0f89ed948.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/5472597358f0f89ed948.hot-update.json"
-    },
-    "index.7b8521fedfa6bb5bb2a6.hot-update.js": {
-      "name": "index.7b8521fedfa6bb5bb2a6.hot-update.js",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.7b8521fedfa6bb5bb2a6.hot-update.js",
-      "publicPath": "http://127.0.0.1:8080/index.7b8521fedfa6bb5bb2a6.hot-update.js"
-    },
-    "7b8521fedfa6bb5bb2a6.hot-update.json": {
-      "name": "7b8521fedfa6bb5bb2a6.hot-update.json",
-      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\7b8521fedfa6bb5bb2a6.hot-update.json",
-      "publicPath": "http://127.0.0.1:8080/7b8521fedfa6bb5bb2a6.hot-update.json"
+    "index.d8ca725407e337cd31bb.hot-update.js": {
+      "name": "index.d8ca725407e337cd31bb.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.d8ca725407e337cd31bb.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.d8ca725407e337cd31bb.hot-update.js"
+    },
+    "d8ca725407e337cd31bb.hot-update.json": {
+      "name": "d8ca725407e337cd31bb.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\d8ca725407e337cd31bb.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/d8ca725407e337cd31bb.hot-update.json"
+    },
+    "index.795cf9c135dcc5e1c418.hot-update.js": {
+      "name": "index.795cf9c135dcc5e1c418.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.795cf9c135dcc5e1c418.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.795cf9c135dcc5e1c418.hot-update.js"
+    },
+    "795cf9c135dcc5e1c418.hot-update.json": {
+      "name": "795cf9c135dcc5e1c418.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\795cf9c135dcc5e1c418.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/795cf9c135dcc5e1c418.hot-update.json"
+    },
+    "index.85834d63a296a4127ef6.hot-update.js": {
+      "name": "index.85834d63a296a4127ef6.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.85834d63a296a4127ef6.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.85834d63a296a4127ef6.hot-update.js"
+    },
+    "85834d63a296a4127ef6.hot-update.json": {
+      "name": "85834d63a296a4127ef6.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\85834d63a296a4127ef6.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/85834d63a296a4127ef6.hot-update.json"
+    },
+    "index.764b6cfd9eddbf11689e.hot-update.js": {
+      "name": "index.764b6cfd9eddbf11689e.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.764b6cfd9eddbf11689e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.764b6cfd9eddbf11689e.hot-update.js"
+    },
+    "764b6cfd9eddbf11689e.hot-update.json": {
+      "name": "764b6cfd9eddbf11689e.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\764b6cfd9eddbf11689e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/764b6cfd9eddbf11689e.hot-update.json"
+    },
+    "index.9700ce12c75aabd623d2.hot-update.js": {
+      "name": "index.9700ce12c75aabd623d2.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.9700ce12c75aabd623d2.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.9700ce12c75aabd623d2.hot-update.js"
+    },
+    "9700ce12c75aabd623d2.hot-update.json": {
+      "name": "9700ce12c75aabd623d2.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\9700ce12c75aabd623d2.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/9700ce12c75aabd623d2.hot-update.json"
+    },
+    "index.28439345fd40ede82549.hot-update.js": {
+      "name": "index.28439345fd40ede82549.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.28439345fd40ede82549.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.28439345fd40ede82549.hot-update.js"
+    },
+    "28439345fd40ede82549.hot-update.json": {
+      "name": "28439345fd40ede82549.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\28439345fd40ede82549.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/28439345fd40ede82549.hot-update.json"
+    },
+    "index.520a92187df1b1442618.hot-update.js": {
+      "name": "index.520a92187df1b1442618.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.520a92187df1b1442618.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.520a92187df1b1442618.hot-update.js"
+    },
+    "520a92187df1b1442618.hot-update.json": {
+      "name": "520a92187df1b1442618.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\520a92187df1b1442618.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/520a92187df1b1442618.hot-update.json"
+    },
+    "index.ec7d6215138b9ba547f8.hot-update.js": {
+      "name": "index.ec7d6215138b9ba547f8.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.ec7d6215138b9ba547f8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.ec7d6215138b9ba547f8.hot-update.js"
+    },
+    "ec7d6215138b9ba547f8.hot-update.json": {
+      "name": "ec7d6215138b9ba547f8.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\ec7d6215138b9ba547f8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/ec7d6215138b9ba547f8.hot-update.json"
+    },
+    "index.6bf1b8d418ccebd1c729.hot-update.js": {
+      "name": "index.6bf1b8d418ccebd1c729.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.6bf1b8d418ccebd1c729.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.6bf1b8d418ccebd1c729.hot-update.js"
+    },
+    "6bf1b8d418ccebd1c729.hot-update.json": {
+      "name": "6bf1b8d418ccebd1c729.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\6bf1b8d418ccebd1c729.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/6bf1b8d418ccebd1c729.hot-update.json"
+    },
+    "index.ce5b5abd9ea66e044c70.hot-update.js": {
+      "name": "index.ce5b5abd9ea66e044c70.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.ce5b5abd9ea66e044c70.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.ce5b5abd9ea66e044c70.hot-update.js"
+    },
+    "ce5b5abd9ea66e044c70.hot-update.json": {
+      "name": "ce5b5abd9ea66e044c70.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\ce5b5abd9ea66e044c70.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/ce5b5abd9ea66e044c70.hot-update.json"
+    },
+    "index.fd50266dee70e874ad77.hot-update.js": {
+      "name": "index.fd50266dee70e874ad77.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.fd50266dee70e874ad77.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.fd50266dee70e874ad77.hot-update.js"
+    },
+    "fd50266dee70e874ad77.hot-update.json": {
+      "name": "fd50266dee70e874ad77.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\fd50266dee70e874ad77.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/fd50266dee70e874ad77.hot-update.json"
+    },
+    "index.f7a9a4bd1577a3edcc2e.hot-update.js": {
+      "name": "index.f7a9a4bd1577a3edcc2e.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.f7a9a4bd1577a3edcc2e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.f7a9a4bd1577a3edcc2e.hot-update.js"
+    },
+    "f7a9a4bd1577a3edcc2e.hot-update.json": {
+      "name": "f7a9a4bd1577a3edcc2e.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\f7a9a4bd1577a3edcc2e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/f7a9a4bd1577a3edcc2e.hot-update.json"
+    },
+    "index.b5635856413a23063203.hot-update.js": {
+      "name": "index.b5635856413a23063203.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.b5635856413a23063203.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.b5635856413a23063203.hot-update.js"
+    },
+    "b5635856413a23063203.hot-update.json": {
+      "name": "b5635856413a23063203.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\b5635856413a23063203.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/b5635856413a23063203.hot-update.json"
+    },
+    "index.d1d4333ad7a9158a2b6d.hot-update.js": {
+      "name": "index.d1d4333ad7a9158a2b6d.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.d1d4333ad7a9158a2b6d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.d1d4333ad7a9158a2b6d.hot-update.js"
+    },
+    "d1d4333ad7a9158a2b6d.hot-update.json": {
+      "name": "d1d4333ad7a9158a2b6d.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\d1d4333ad7a9158a2b6d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/d1d4333ad7a9158a2b6d.hot-update.json"
+    },
+    "0cefd86463415e1b3e5c.hot-update.json": {
+      "name": "0cefd86463415e1b3e5c.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\0cefd86463415e1b3e5c.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/0cefd86463415e1b3e5c.hot-update.json"
+    },
+    "index.f23159d9b12d35eef498.hot-update.js": {
+      "name": "index.f23159d9b12d35eef498.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.f23159d9b12d35eef498.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.f23159d9b12d35eef498.hot-update.js"
+    },
+    "f23159d9b12d35eef498.hot-update.json": {
+      "name": "f23159d9b12d35eef498.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\f23159d9b12d35eef498.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/f23159d9b12d35eef498.hot-update.json"
+    },
+    "index.2e5cfabff58052a05f8e.hot-update.js": {
+      "name": "index.2e5cfabff58052a05f8e.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.2e5cfabff58052a05f8e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.2e5cfabff58052a05f8e.hot-update.js"
+    },
+    "2e5cfabff58052a05f8e.hot-update.json": {
+      "name": "2e5cfabff58052a05f8e.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\2e5cfabff58052a05f8e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/2e5cfabff58052a05f8e.hot-update.json"
+    },
+    "index.de94243703e9a57d73aa.hot-update.js": {
+      "name": "index.de94243703e9a57d73aa.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.de94243703e9a57d73aa.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.de94243703e9a57d73aa.hot-update.js"
+    },
+    "de94243703e9a57d73aa.hot-update.json": {
+      "name": "de94243703e9a57d73aa.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\de94243703e9a57d73aa.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/de94243703e9a57d73aa.hot-update.json"
+    },
+    "index.4e38bd958ed78e76ba3e.hot-update.js": {
+      "name": "index.4e38bd958ed78e76ba3e.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.4e38bd958ed78e76ba3e.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.4e38bd958ed78e76ba3e.hot-update.js"
+    },
+    "4e38bd958ed78e76ba3e.hot-update.json": {
+      "name": "4e38bd958ed78e76ba3e.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\4e38bd958ed78e76ba3e.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/4e38bd958ed78e76ba3e.hot-update.json"
+    },
+    "index.1f3e0b5bb0e8df6259cb.hot-update.js": {
+      "name": "index.1f3e0b5bb0e8df6259cb.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.1f3e0b5bb0e8df6259cb.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.1f3e0b5bb0e8df6259cb.hot-update.js"
+    },
+    "1f3e0b5bb0e8df6259cb.hot-update.json": {
+      "name": "1f3e0b5bb0e8df6259cb.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\1f3e0b5bb0e8df6259cb.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/1f3e0b5bb0e8df6259cb.hot-update.json"
+    },
+    "index.92b155941b152d89a2cd.hot-update.js": {
+      "name": "index.92b155941b152d89a2cd.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.92b155941b152d89a2cd.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.92b155941b152d89a2cd.hot-update.js"
+    },
+    "92b155941b152d89a2cd.hot-update.json": {
+      "name": "92b155941b152d89a2cd.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\92b155941b152d89a2cd.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/92b155941b152d89a2cd.hot-update.json"
+    },
+    "index.f41ff692351868439d25.hot-update.js": {
+      "name": "index.f41ff692351868439d25.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.f41ff692351868439d25.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.f41ff692351868439d25.hot-update.js"
+    },
+    "f41ff692351868439d25.hot-update.json": {
+      "name": "f41ff692351868439d25.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\f41ff692351868439d25.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/f41ff692351868439d25.hot-update.json"
+    },
+    "index.286a9584e04ec6d96b69.hot-update.js": {
+      "name": "index.286a9584e04ec6d96b69.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.286a9584e04ec6d96b69.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.286a9584e04ec6d96b69.hot-update.js"
+    },
+    "286a9584e04ec6d96b69.hot-update.json": {
+      "name": "286a9584e04ec6d96b69.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\286a9584e04ec6d96b69.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/286a9584e04ec6d96b69.hot-update.json"
+    },
+    "index.ed3df8604be651089c40.hot-update.js": {
+      "name": "index.ed3df8604be651089c40.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.ed3df8604be651089c40.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.ed3df8604be651089c40.hot-update.js"
+    },
+    "ed3df8604be651089c40.hot-update.json": {
+      "name": "ed3df8604be651089c40.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\ed3df8604be651089c40.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/ed3df8604be651089c40.hot-update.json"
+    },
+    "index.a8b24ccc3fd34a4dc4d8.hot-update.js": {
+      "name": "index.a8b24ccc3fd34a4dc4d8.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.a8b24ccc3fd34a4dc4d8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.a8b24ccc3fd34a4dc4d8.hot-update.js"
+    },
+    "a8b24ccc3fd34a4dc4d8.hot-update.json": {
+      "name": "a8b24ccc3fd34a4dc4d8.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\a8b24ccc3fd34a4dc4d8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/a8b24ccc3fd34a4dc4d8.hot-update.json"
+    },
+    "index.9fd28720aff459a10d87.hot-update.js": {
+      "name": "index.9fd28720aff459a10d87.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.9fd28720aff459a10d87.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.9fd28720aff459a10d87.hot-update.js"
+    },
+    "9fd28720aff459a10d87.hot-update.json": {
+      "name": "9fd28720aff459a10d87.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\9fd28720aff459a10d87.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/9fd28720aff459a10d87.hot-update.json"
+    },
+    "index.d91cbaf8e37bbd512464.hot-update.js": {
+      "name": "index.d91cbaf8e37bbd512464.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.d91cbaf8e37bbd512464.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.d91cbaf8e37bbd512464.hot-update.js"
+    },
+    "d91cbaf8e37bbd512464.hot-update.json": {
+      "name": "d91cbaf8e37bbd512464.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\d91cbaf8e37bbd512464.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/d91cbaf8e37bbd512464.hot-update.json"
+    },
+    "index.3c5bd779d91fe5c52c7d.hot-update.js": {
+      "name": "index.3c5bd779d91fe5c52c7d.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.3c5bd779d91fe5c52c7d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.3c5bd779d91fe5c52c7d.hot-update.js"
+    },
+    "3c5bd779d91fe5c52c7d.hot-update.json": {
+      "name": "3c5bd779d91fe5c52c7d.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\3c5bd779d91fe5c52c7d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/3c5bd779d91fe5c52c7d.hot-update.json"
+    },
+    "index.815d6bf4074d525bb5eb.hot-update.js": {
+      "name": "index.815d6bf4074d525bb5eb.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.815d6bf4074d525bb5eb.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.815d6bf4074d525bb5eb.hot-update.js"
+    },
+    "815d6bf4074d525bb5eb.hot-update.json": {
+      "name": "815d6bf4074d525bb5eb.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\815d6bf4074d525bb5eb.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/815d6bf4074d525bb5eb.hot-update.json"
+    },
+    "index.c652a533882b1a18b78d.hot-update.js": {
+      "name": "index.c652a533882b1a18b78d.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.c652a533882b1a18b78d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.c652a533882b1a18b78d.hot-update.js"
+    },
+    "c652a533882b1a18b78d.hot-update.json": {
+      "name": "c652a533882b1a18b78d.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\c652a533882b1a18b78d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/c652a533882b1a18b78d.hot-update.json"
+    },
+    "index.6b68bef1d9595925d2e5.hot-update.js": {
+      "name": "index.6b68bef1d9595925d2e5.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.6b68bef1d9595925d2e5.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.6b68bef1d9595925d2e5.hot-update.js"
+    },
+    "6b68bef1d9595925d2e5.hot-update.json": {
+      "name": "6b68bef1d9595925d2e5.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\6b68bef1d9595925d2e5.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/6b68bef1d9595925d2e5.hot-update.json"
+    },
+    "index.c2ad1467c5cfdf9121c7.hot-update.js": {
+      "name": "index.c2ad1467c5cfdf9121c7.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.c2ad1467c5cfdf9121c7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.c2ad1467c5cfdf9121c7.hot-update.js"
+    },
+    "c2ad1467c5cfdf9121c7.hot-update.json": {
+      "name": "c2ad1467c5cfdf9121c7.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\c2ad1467c5cfdf9121c7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/c2ad1467c5cfdf9121c7.hot-update.json"
+    },
+    "index.13a9fbdac1ca1ded6f3d.hot-update.js": {
+      "name": "index.13a9fbdac1ca1ded6f3d.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.13a9fbdac1ca1ded6f3d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.13a9fbdac1ca1ded6f3d.hot-update.js"
+    },
+    "13a9fbdac1ca1ded6f3d.hot-update.json": {
+      "name": "13a9fbdac1ca1ded6f3d.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\13a9fbdac1ca1ded6f3d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/13a9fbdac1ca1ded6f3d.hot-update.json"
+    },
+    "index.74cae5f38e457439f49a.hot-update.js": {
+      "name": "index.74cae5f38e457439f49a.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.74cae5f38e457439f49a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.74cae5f38e457439f49a.hot-update.js"
+    },
+    "74cae5f38e457439f49a.hot-update.json": {
+      "name": "74cae5f38e457439f49a.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\74cae5f38e457439f49a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/74cae5f38e457439f49a.hot-update.json"
+    },
+    "index.f35488c1975254a7f40d.hot-update.js": {
+      "name": "index.f35488c1975254a7f40d.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.f35488c1975254a7f40d.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.f35488c1975254a7f40d.hot-update.js"
+    },
+    "f35488c1975254a7f40d.hot-update.json": {
+      "name": "f35488c1975254a7f40d.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\f35488c1975254a7f40d.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/f35488c1975254a7f40d.hot-update.json"
+    },
+    "index.5534a41f941ee444591a.hot-update.js": {
+      "name": "index.5534a41f941ee444591a.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.5534a41f941ee444591a.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.5534a41f941ee444591a.hot-update.js"
+    },
+    "5534a41f941ee444591a.hot-update.json": {
+      "name": "5534a41f941ee444591a.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\5534a41f941ee444591a.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/5534a41f941ee444591a.hot-update.json"
+    },
+    "index.294cddf0dceedf0df0f1.hot-update.js": {
+      "name": "index.294cddf0dceedf0df0f1.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.294cddf0dceedf0df0f1.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.294cddf0dceedf0df0f1.hot-update.js"
+    },
+    "294cddf0dceedf0df0f1.hot-update.json": {
+      "name": "294cddf0dceedf0df0f1.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\294cddf0dceedf0df0f1.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/294cddf0dceedf0df0f1.hot-update.json"
+    },
+    "index.057ea315f3288013d878.hot-update.js": {
+      "name": "index.057ea315f3288013d878.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.057ea315f3288013d878.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.057ea315f3288013d878.hot-update.js"
+    },
+    "057ea315f3288013d878.hot-update.json": {
+      "name": "057ea315f3288013d878.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\057ea315f3288013d878.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/057ea315f3288013d878.hot-update.json"
+    },
+    "index.dd571684db6943d31b70.hot-update.js": {
+      "name": "index.dd571684db6943d31b70.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.dd571684db6943d31b70.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.dd571684db6943d31b70.hot-update.js"
+    },
+    "dd571684db6943d31b70.hot-update.json": {
+      "name": "dd571684db6943d31b70.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\dd571684db6943d31b70.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/dd571684db6943d31b70.hot-update.json"
+    },
+    "index.7b74e9832542494ac9e8.hot-update.js": {
+      "name": "index.7b74e9832542494ac9e8.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.7b74e9832542494ac9e8.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.7b74e9832542494ac9e8.hot-update.js"
+    },
+    "7b74e9832542494ac9e8.hot-update.json": {
+      "name": "7b74e9832542494ac9e8.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\7b74e9832542494ac9e8.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/7b74e9832542494ac9e8.hot-update.json"
+    },
+    "index.3f6aad99147432c07a85.hot-update.js": {
+      "name": "index.3f6aad99147432c07a85.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.3f6aad99147432c07a85.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.3f6aad99147432c07a85.hot-update.js"
+    },
+    "3f6aad99147432c07a85.hot-update.json": {
+      "name": "3f6aad99147432c07a85.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\3f6aad99147432c07a85.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/3f6aad99147432c07a85.hot-update.json"
+    },
+    "index.329a599c28c7dfc9f6be.hot-update.js": {
+      "name": "index.329a599c28c7dfc9f6be.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.329a599c28c7dfc9f6be.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.329a599c28c7dfc9f6be.hot-update.js"
+    },
+    "329a599c28c7dfc9f6be.hot-update.json": {
+      "name": "329a599c28c7dfc9f6be.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\329a599c28c7dfc9f6be.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/329a599c28c7dfc9f6be.hot-update.json"
+    },
+    "index.9882be83c1b35549bf25.hot-update.js": {
+      "name": "index.9882be83c1b35549bf25.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.9882be83c1b35549bf25.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.9882be83c1b35549bf25.hot-update.js"
+    },
+    "9882be83c1b35549bf25.hot-update.json": {
+      "name": "9882be83c1b35549bf25.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\9882be83c1b35549bf25.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/9882be83c1b35549bf25.hot-update.json"
+    },
+    "index.bb1776d19503c3db1ea7.hot-update.js": {
+      "name": "index.bb1776d19503c3db1ea7.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.bb1776d19503c3db1ea7.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.bb1776d19503c3db1ea7.hot-update.js"
+    },
+    "bb1776d19503c3db1ea7.hot-update.json": {
+      "name": "bb1776d19503c3db1ea7.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\bb1776d19503c3db1ea7.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/bb1776d19503c3db1ea7.hot-update.json"
+    },
+    "index.172531ddf571594d37f9.hot-update.js": {
+      "name": "index.172531ddf571594d37f9.hot-update.js",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\index.172531ddf571594d37f9.hot-update.js",
+      "publicPath": "http://127.0.0.1:8080/index.172531ddf571594d37f9.hot-update.js"
+    },
+    "172531ddf571594d37f9.hot-update.json": {
+      "name": "172531ddf571594d37f9.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\172531ddf571594d37f9.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/172531ddf571594d37f9.hot-update.json"
+    },
+    "3f2e6a01ecf7cacf8110.hot-update.json": {
+      "name": "3f2e6a01ecf7cacf8110.hot-update.json",
+      "path": "C:\\Users\\ADMIN\\semoview\\django-vue\\dist\\3f2e6a01ecf7cacf8110.hot-update.json",
+      "publicPath": "http://127.0.0.1:8080/3f2e6a01ecf7cacf8110.hot-update.json"
     }
   },
   "chunks": {
     "index": [
-      "js/index.js",
-      "index.7b8521fedfa6bb5bb2a6.hot-update.js"
+      "js/index.js"
     ]
   },
   "publicPath": "http://127.0.0.1:8080/",
-  "error": "ModuleError",
-  "message": "Module Error (from ./node_modules/eslint-loader/index.js):\n\nC:\\Users\\ADMIN\\semoview\\django-vue\\src\\views\\MyReview.vue\n  28:4  error  Parsing error: Unexpected keyword 'this'.\n\n  11 |   },\n  12 |   created: {\n> 13 |     this.fetch_all_stage();\n     |     ^\n  14 |   },\n  15 |   methods: {\n  16 |     fetch_all_stage: function () {\n\n✖ 1 problem (1 error, 0 warnings)\n"
+  "error": "ModuleBuildError",
+  "message": "Module build failed (from ./node_modules/postcss-loader/src/index.js):\nSyntaxError\n\n(117:3) Unknown word\n\n  115 | page-item.active > .page-link {\n  116 |   !important\n> 117 |   color: white;\n      |   ^\n  118 |   text-decoration: none;\n  119 |   background-color: gray;\n"
 }

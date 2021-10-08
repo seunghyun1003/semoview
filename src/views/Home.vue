@@ -4,14 +4,21 @@
       예매랭킹
     </div>
     <div class="stage-list">        
-      <div class="item" v-for="stage in stageList" :key="stage.id" @click="detailshow(stage.id)">
+      <div class="item" v-for="stage in stageList.slice(perPage*(currentPage-1),perPage*(currentPage))" :key="stage.id" @click="detailshow(stage.id)">
           <div id="item-id">{{stage.id}} </div> 
           <div id="item-img"><img :src="stage.stageImglink" alt /></div>
           <div id="item-title"><span><strong>{{stage.stageTitle}}</strong></span></div> 
       </div> 
-      <div class="card-footer pb-0 pt-3">
-            <jw-pagination :items="exampleItems" @changePage="onChangePage"></jw-pagination>
-        </div>
+      <b-pagination
+        v-model="currentPage"
+        :total-rows="1000"
+        :per-page="perPage"
+        first-text="<<"
+        prev-text="<"
+        next-text=">"
+        last-text=">>"
+        align="center"
+      ></b-pagination>
     </div>
   </div>
 </template>
@@ -19,14 +26,13 @@
 <script>
 import axios from 'axios'
 
-const exampleItems = [...Array(10).keys()].map(i => ({ id: (i+1), name: 'Item ' + (i+1) }));
-
 export default {
   name: 'Home',
   data() {
     return {
       stageList : [],
-      exampleItems,
+      currentPage: 1,
+      perPage: 40,
     }
   },
   created: function() {
@@ -41,10 +47,6 @@ export default {
       .catch(err => {
         console.log(err)
       })
-    },
-    onChangePage(stageList) {
-      // update page of items
-      this.stageList = stageList;
     },
     detailshow(index) {
       this.$router.push({
@@ -104,5 +106,9 @@ export default {
     display: -webkit-box; 
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
+  }
+
+  .pagination{
+    margin-top: 1.4em;
   }
 </style>
