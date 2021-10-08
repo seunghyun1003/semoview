@@ -14,7 +14,7 @@
       <div class="nav-item">
         <b-nav-item-dropdown
           id="my-nav-dropdown"
-          text="username"
+          v-bind:text=username
           toggle-class="nav-link-custom"
           right
         >
@@ -32,11 +32,13 @@
 </template>
 
 <script>
+import jwt_decode from "jwt-decode";
 export default {
   name: 'Nav',
   data: function () {
     return {
       isLogin : false,
+      username : jwt_decode(localStorage.getItem('jwt')).username,
     }
   },
   methods: {

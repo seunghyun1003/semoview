@@ -5,9 +5,18 @@
     </div>
     <div class="myreview-list">        
       <div class="myreview-item" v-for="myreview in reviewList" :key="myreview.id">
-          <div id="myreview-item-content">{{myreview.reviewContents}} </div> 
-          <div id="myreview-item-title">{{myreview.point}}</div> 
-          <div id="myreview-item-date">{{$moment(myreview.created_at).format('YYYY-MM-DD')}}</div> 
+          <div id="myreview-item-1">
+            <div class="myreview-item-title"><strong>{{myreview.stage_stageTitle}}</strong></div> 
+            <div class="myreview-item-point">
+              <span v-for="myreview in myreview.point" :key=myreview.point>★</span>
+              <span v-for="myreview in 5-myreview.point" :key=myreview.point>☆</span>
+              <span> ({{myreview.point}})</span>
+            </div>  
+          </div>
+          <div id="myreview-item-2">
+            <div class="myreview-item-content">{{myreview.reviewContents}} </div>
+            <div class="myreview-item-date">{{$moment(myreview.created_at).format('YYYY-MM-DD')}}</div>
+          </div>
       </div> 
     </div> 
   </div>
@@ -48,10 +57,31 @@ export default {
     font-weight: bolder;
     font-size: 1.2em;
     text-align: left;
+    margin-bottom: 1em;
   }
 
   .myreview-item{
+    padding: 1em 0.8em;
+    border-top: 1px solid rgb(72, 72, 72);
+  }
+  #myreview-item-1{
     text-align: left;
-    padding: 1em;
+  }
+  #myreview-item-2{
+    text-align: right;
+  }
+  .myreview-item-title{
+    font-size: 1em;
+  }
+  .myreview-item-content{
+    font-size: 0.86em;
+  }
+  .myreview-item-point{
+    color: rgb(231, 194, 43);
+    font-size: 0.8em;
+  }
+  .myreview-item-date {
+    font-size: 0.6em;
+    color: gray;
   }
 </style>

@@ -18,14 +18,18 @@
                 </div>
             </div>
             <div v-for="review in reviewList" :key="review.id" class="review-item">
-                <div> 
+                <div id="review-item-1">
                     <div class="review-item-username">{{review.user_username}}</div>
-                    <div>
-                        <div class="review-item-point">{{review.point}}</div>
-                        <div class="review-item-date">{{$moment(review.created_at).format('YYYY-MM-DD')}}</div>
+                    <div class="review-item-point">
+                        <span v-for="review in review.point" :key=review.point>★</span>
+                        <span v-for="review in 5-review.point" :key=review.point>☆</span>
+                        <span> ({{review.point}})</span>
                     </div>
                 </div>
-                <div class="review-item-content">{{review.reviewContents}}</div>
+                <div id="review-item-2">
+                    <div class="review-item-content">{{review.reviewContents}}</div>
+                    <div class="review-item-date">{{$moment(review.created_at).format('YYYY-MM-DD')}}</div>
+                </div>
             </div>
         </div>
         
@@ -172,13 +176,16 @@ export default {
         .catch((err) => {
           console.log(err)
         })
-    }
+    },
   }
 }
 
 </script>
 
 <style scoped>
+  #detail {
+    overflow: auto ;
+  }
   #stage-item{
     border-bottom: 1px solid rgb(157, 157, 157);
   }
@@ -203,7 +210,6 @@ export default {
 
 
   #review{
-    text-align: left;
     padding: 1em;
   }
   .review-header{
@@ -221,19 +227,32 @@ export default {
     color: black;
   }
 
-  .review-item > div > div{
+  .review-item{
     display: flex;
     justify-content: space-between;
+    padding: 0.6em 0.6em;
+  }
+  #review-item-1{
+    text-align: left;
+  }
+  #review-item-2{
+    text-align: right;
   }
   .review-item-username{
     font-size: 1.1em;
+
   }
-  .review-item-point, .review-item-date{
-    font-size: 0.4em;
+  .review-item-point {
+    font-size: 0.6em;
+    color: rgb(231, 194, 43);
+  }
+  .review-item-date {
+    font-size: 0.6em;
+    color: gray;
   }
   .review-item-content{
-    padding: 0.4em 0 1em 1.4em;
-    
+    padding: 0.4em 0 0.2em 1.4em;
+    font-size: 0.86em;
   }
 
   #review-item > div > div.vue-star-rating {

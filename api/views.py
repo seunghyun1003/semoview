@@ -79,6 +79,7 @@ def thisStageReviewDelete(request, review_pk):
 
 def MyReviewlist(request, user_Id):
     reviews = Review.objects.all()
+    stages = StageData.objects.all()
     myReviews = reviews.filter(user_id = user_Id)
     myreview_list = []
 
@@ -86,6 +87,7 @@ def MyReviewlist(request, user_Id):
         myreview_list.append({
             'id': myReview.id, 
             'stage_id': myReview.stage_id.id, 
+            'stage_stageTitle' : stages[myReview.stage_id.id-1].stageTitle,
             'user_id': myReview.user_id.id, 
             'user_username': myReview.user_id.username, 
             'reviewContents': myReview.reviewContents, 
