@@ -20,7 +20,7 @@
         >
           <b-dropdown-item v-if="isLogin">
             <router-link :to="{ name: 'MyReview' }">작성한 리뷰</router-link>
-            <b-dropdown-divider></b-dropdown-divider>
+            <div></div>
             <button @click="logout">Logout</button>
           </b-dropdown-item>
           <b-dropdown-item v-else router-link :to="{ name: 'Login' }">Login
@@ -32,7 +32,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'Nav',
   data: function () {
@@ -58,7 +57,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 #nav{
   display: flex;
   height: 3em;
@@ -95,10 +94,21 @@ a > a{
   color: white;
   background-color: inherit;
   border: none;
-  padding:0;
+  padding:0 0.2em 0 0.7em;
   text-decoration:none;
 }
-.nav-item > a{
-  font-size: 1.33em;
+.nav-link{
+  font-size: 1.2em;
+}
+#my-nav-dropdown > ul {
+  background-color: rgb(82, 82, 82);
+  border: 1px solid rgb(90, 90, 90);
+}
+#my-nav-dropdown > ul > li > a > button {
+  background-color: inherit;
+  border: none;
+  color: white;
+  font-size: bold;
+  padding: 0;
 }
 </style>

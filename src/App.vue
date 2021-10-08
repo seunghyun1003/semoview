@@ -54,4 +54,7 @@ ul, li{
   list-style:none;
   padding-left:0px;
 }
+a:active ,a:focus, a{
+  color: white !important;
+}
 </style>
