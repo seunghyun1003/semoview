@@ -7,19 +7,15 @@
     </div>
     <div class="nav-menu">
       <div class="nav-item">
-        <button>
-          <router-link :to="{ name: 'Search' }">
-            <b-icon icon="search"></b-icon>
-          </router-link>
-        </button>
-      </div>
-      <div class="nav-item">
         <b-nav-item-dropdown
           id="my-nav-dropdown"
           v-bind:text=username
           toggle-class="nav-link-custom"
           right
         >
+          <b-dropdown-item router-link :to="{ name: 'Search' }">
+            Search<b-icon icon="search"></b-icon>
+          </b-dropdown-item>
           <b-dropdown-item v-if="isLogin">
             <router-link :to="{ name: 'MyReview' }">작성한 리뷰</router-link>
             <b-dropdown-divider></b-dropdown-divider>

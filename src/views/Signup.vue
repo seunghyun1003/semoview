@@ -1,21 +1,21 @@
 <template>
-  <div id="Signup">
-    <h1>Signup</h1>
+  <div id="signup">
+    <h1><strong>Signup</strong> </h1>
     <div>
-      <label for="username">사용자 이름: </label>
-      <input type="text" id="username" v-model="credentials.username">
+      <label for="username"></label>
+      <input type="text" id="username" v-model="credentials.username" placeholder="USERNAME">
     </div>
     <div>
-      <label for="email">이메일: </label>
-      <input type="email" id="email" v-model="credentials.email">
+      <label for="email"></label>
+      <input type="email" id="email" v-model="credentials.email" placeholder="EMAIL">
     </div>
     <div>
-      <label for="password">비밀번호: </label>
-      <input type="password" id="password1" v-model="credentials.password1">
+      <label for="password"></label>
+      <input type="password" id="password1" v-model="credentials.password1" placeholder="PASSWORD">
     </div>
     <div>
-      <label for="passwordConfirmation">비밀번호 확인: </label>
-      <input type="password" id="password2" v-model="credentials.password2">
+      <label for="passwordConfirmation"></label>
+      <input type="password" id="password2" v-model="credentials.password2" placeholder="PASSWORD CHECK">
     </div>
     <button @click="signup">회원가입</button>
   </div>
@@ -57,3 +57,31 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#signup{
+    display: flex;
+    flex-flow: column;
+    justify-content : center;
+    align-items: center;
+    height:100%;
+    padding-bottom: 10em;
+}
+#signup > h1 {
+    margin-bottom: 1em;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+text-align:center;
+margin-bottom: 0.6em;
+}
+#signup > button {
+    background-color: rgb(85, 85, 85);
+    border:gray;
+    color:white;
+    padding: 0.4em 0.6em;
+    border-radius: 0.4em;
+    margin: 0.8em 0 1.5em 0;
+}
+</style>

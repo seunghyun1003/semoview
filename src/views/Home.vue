@@ -1,7 +1,16 @@
 <template>
   <div id="home">
-    <div class="page-title">
-      예매랭킹
+    <div id="home-header">
+      <div class="header-title">
+        예매랭킹
+      </div>
+      <div class="header-nav">
+        <button>
+          <router-link :to="{ name: 'Search' }">
+            <b-icon icon="search"></b-icon>
+          </router-link>
+        </button>
+      </div>
     </div>
     <div class="stage-list">        
       <div class="item" v-for="stage in stageList.slice(perPage*(currentPage-1),perPage*(currentPage))" :key="stage.id" @click="detailshow(stage.id)">
@@ -64,10 +73,21 @@ export default {
   #home{
     overflow: auto ;
   }
-  .page-title{
+  #home-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-title{
     font-weight: bolder;
     font-size: 1.2em;
     text-align: left;
+  }
+  .header-nav > button{
+    color: white;
+    background-color: inherit;
+    border: none;
+    padding:0 1em;
+    text-decoration:none;
   }
   .stage-list{
   }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Nav/>
-    <div class="contents">
+    <div id="contents">
       <router-view/>
     </div>
     <button id="toTop" 
@@ -46,9 +46,10 @@ export default {
   height: 100%;
   overflow: auto ;
 }
-.contents{
+#contents{
   margin-top: 3em;
   padding: 1em;
+  height: 100%;
 }
 ul, li{
   list-style:none;
