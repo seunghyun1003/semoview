@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/views/Home.vue'
 import MyReview from '@/views/MyReview.vue'
 import Signup from '@/views/Signup.vue'
-import Login from '@/views/Login.vue'
+import Signin from '@/views/Signin.vue'
 import Search from '@/views/Search.vue'
 import Detail from '@/views/Detail.vue'
 import ReviewUpdate from '@/views/ReviewUpdate.vue'
@@ -28,9 +28,9 @@ export default new Router({
       component: Signup
     },
     {
-      path: '/login',
-      name: 'Login',
-      component: Login
+      path: '/signin',
+      name: 'Signin',
+      component: Signin
     },
     {
       path: '/search',

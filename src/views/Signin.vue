@@ -1,6 +1,7 @@
 <template>
-    <div id="login">
-        <h1><strong>Login</strong> </h1>
+    <div id="signin">
+        <div class="errorMsg">{{message}}</div>
+        <h1><strong>Signin</strong> </h1>
         <div>
             <label for="username"></label>
             <input type="text" id="username" v-model="credentials.username" placeholder="ID">
@@ -10,7 +11,7 @@
             <input type="password" id="password" v-model="credentials.password" placeholder="PASSWORD">
         </div>
 
-        <button @click="login">로그인</button>
+        <button @click="signin">로그인</button>
         <div class="singuplink">
             <router-link :to="{name: 'Signup'}">아직 회원이 아니신가요?</router-link>
         </div>
@@ -24,9 +25,10 @@ import axios from 'axios'
 // const SERVER_URL = process.env.VUE_APP_SERVER_URL
 
 export default {
-    name: 'Login',
+    name: 'Signin',
     data: function () {
         return {
+            message: '',
             credentials : {
                 username : null,
                 password : null,
@@ -34,7 +36,7 @@ export default {
         }
     },
     methods: {
-        login: function () {
+        signin: function () {
             axios({
                 method : 'post',
                 url : 'http://127.0.0.1:8000/api-token-auth/obtain_token/',
@@ -49,6 +51,7 @@ export default {
             })
             .catch(err => {
                 console.log(err)
+                this.message = "ID 또는 PASSWORD를 확인해주세요."
             })
         },
     },
@@ -56,7 +59,7 @@ export default {
 </script>
 
 <style scoped>
-#login{
+#signin{
     display: flex;
     flex-flow: column;
     justify-content : center;
@@ -64,14 +67,19 @@ export default {
     height:100%;
     padding-bottom: 10em;
 }
-#login > h1 {
+.errorMsg{
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    color:salmon;
+}
+#signin > h1 {
     margin-bottom: 1em;
 }
 input[type="text"],input[type="password"]{
 text-align:center;
 margin-bottom: 0.6em;
 }
-#login > button {
+#signin > button {
     background-color: rgb(85, 85, 85);
     border:gray;
     color:white;

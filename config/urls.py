@@ -12,7 +12,9 @@ urlpatterns = [
     #로그인 토큰 받기 위한 url
     path('api-token-auth/obtain_token/', obtain_jwt_token),  # JWT 토큰 획득
     path('api-jwt-auth/refresh/', refresh_jwt_token), # JWT 토큰 갱신
-    path('api-jwt-auth/verify/', verify_jwt_token),   # JWT 토큰 확인
+    path('api-jwt-auth/verify/', verify_jwt_token),   # JWT 토큰 확인3
+    
+    path('ckeck/username', views.ckcekUsername, name='ckcekUsername'),
 
     path('', views.index, name='index'),
     path('stages', views.stagelist, name='stagelist'),

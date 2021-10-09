@@ -1,10 +1,10 @@
 <template>
   <div id="detail">
     <div id="stage-item">
-        <div class="stage-title">{{stage.stageTitle}}</div>
         <div class="stage-info">
             <div id="item-img"><img :src="stage.stageImglink" alt /></div>
         </div>
+        <div class="stage-title">{{stage.stageTitle}}</div>
     </div>
     
     <div id="review">
@@ -187,20 +187,22 @@ export default {
     overflow: auto ;
 }
 #stage-item{
+    display: flex;
     border-bottom: 1px solid rgb(157, 157, 157);
 }
 .stage-title{
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: left;
+    margin-top: 0.8em;
 }
 .stage-info{
-    padding: 1.6em 2em 1.8em;
+    padding: 0.8em 0.6em 1.8em;
 }
 #item-img{
-    min-width: 120px;
-    width: 120px;
-    height: 8em;
+    min-width: 140px;
+    width: 140px;
+    height: 10em;
     padding: 0 1em 0 0;
 }
 #item-img img{

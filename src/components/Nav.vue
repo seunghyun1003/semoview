@@ -14,14 +14,15 @@
           right
         >
           <b-dropdown-item router-link :to="{ name: 'Search' }">
-            Search<b-icon icon="search"></b-icon>
+            Search <b-icon icon="search"></b-icon>
           </b-dropdown-item>
+          <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-item v-if="isLogin">
             <router-link :to="{ name: 'MyReview' }">작성한 리뷰</router-link>
-            <b-dropdown-divider></b-dropdown-divider>
+            <div></div>
             <button @click="logout">Logout</button>
           </b-dropdown-item>
-          <b-dropdown-item v-else router-link :to="{ name: 'Login' }">Login
+          <b-dropdown-item v-else router-link :to="{ name: 'Signin' }">SignIn / SignUp
           </b-dropdown-item>
         </b-nav-item-dropdown>
       </div>
@@ -42,7 +43,7 @@ export default {
   methods: {
     logout: function () {
       localStorage.removeItem('jwt'),
-      this.$router.push({ name : 'Login'})
+      this.$router.push({ name : 'Signin'})
       this.$router.go()
     },
   },
@@ -104,6 +105,7 @@ a > a{
 #my-nav-dropdown > ul {
   background-color: rgb(82, 82, 82);
   border: 1px solid rgb(90, 90, 90);
+  text-align: center;
 }
 #my-nav-dropdown > ul > li :hover,
 #my-nav-dropdown > ul > li :focus {

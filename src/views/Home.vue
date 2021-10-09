@@ -64,6 +64,7 @@ export default {
           contentId: index
         }
       });
+      this.$router.go()
     }
   }
 }

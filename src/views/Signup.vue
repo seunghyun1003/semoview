@@ -1,21 +1,23 @@
 <template>
   <div id="signup">
+    <div class="errorMsg">{{message}}</div>
     <h1><strong>Signup</strong> </h1>
     <div>
       <label for="username"></label>
-      <input type="text" id="username" v-model="credentials.username" placeholder="USERNAME">
+      <input type="text" id="username" v-model="credentials.username" placeholder="USERNAME" > 
+      <button @click="checkUsername(credentials.username)">중복확인</button>
     </div>
     <div>
       <label for="email"></label>
-      <input type="email" id="email" v-model="credentials.email" placeholder="EMAIL">
+      <input type="email" id="email" v-model="credentials.email" placeholder="EMAIL" >
     </div>
     <div>
       <label for="password"></label>
-      <input type="password" id="password1" v-model="credentials.password1" placeholder="PASSWORD">
+      <input type="password" id="password1" v-model="credentials.password1" placeholder="PASSWORD" >
     </div>
     <div>
       <label for="passwordConfirmation"></label>
-      <input type="password" id="password2" v-model="credentials.password2" placeholder="PASSWORD CHECK">
+      <input type="password" id="password2" v-model="credentials.password2" placeholder="PASSWORD CHECK" >
     </div>
     <button @click="signup">회원가입</button>
   </div>
@@ -30,6 +32,8 @@ export default {
   name: 'Signup',
   data: function () {
     return {
+      message: '',
+      ckUsername: false,
       credentials : {
         username : null,
         email : null,
@@ -39,20 +43,54 @@ export default {
     }
   },
   methods: {
+    checkUsername: function (username) {
+      if(username != null) {
+        axios ({
+          method : 'post',
+          url : 'http://127.0.0.1:8000/ckeck/username',
+          data: username,
+        })
+          .then(res => {
+            if (res.data) {
+              this.message = "사용가능한 아이디입니다."
+              this.ckUsername = true
+            } else {
+              this.message = "다른 아이디를 사용해주세요."
+              this.ckUsername = false
+            }
+          })
+          .catch(err => {
+            console.log(err);
+            this.message = "실패) 다른 아이디로 시도해주세요."
+          })
+      } else {
+        this.message = "중복확인 실패) USERNAME을 입력해주세요.";
+      }
+    },
     signup: function () {
-      axios ({
-        method : 'post',
-        url : 'http://127.0.0.1:8000/rest-auth/signup/',
-        data: this.credentials,
-      })
-        .then(res => {
-          console.log(res)
-          // 회원가입에 성공하면 로그인 페이지로 보내기
-          this.$router.push({ name : 'Login'})
-        })
-        .catch(err => {
-          console.log(err)
-        })
+      if (this.credentials.username != '' && this.credentials.email != '' &&
+            this.credentials.password1 != '' && this.credentials.password2 != ''){
+        if (this.ckUsername == true) {
+          axios ({
+            method : 'post',
+            url : 'http://127.0.0.1:8000/rest-auth/signup/',
+            data: this.credentials,
+          })
+            .then(res => {
+              console.log(res.status, 'Success Signup')
+              // 회원가입에 성공하면 로그인 페이지로 보내기
+              this.$router.push({ name : 'Signin'})
+            })
+            .catch(err => {
+              console.log(err);
+              this.message = "실패) 다시 시도해주세요."
+            })
+        } else {
+          alert('ID 중복 확인이 필요합니다.')
+        }
+      } else {
+        alert('모든 정보를 입력해주세요.')
+      }
     }
   }
 }
@@ -66,6 +104,11 @@ export default {
     align-items: center;
     height:100%;
     padding-bottom: 10em;
+}
+.errorMsg{
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    color:salmon;
 }
 #signup > h1 {
     margin-bottom: 1em;

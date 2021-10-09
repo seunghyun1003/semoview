@@ -14,13 +14,33 @@ from rest_framework.parsers import JSONParser
 
 import json
 
-from .models import StageData
-from .models import Review
+from .models import *
 
 from django.shortcuts import render
 
+from django.contrib.auth import get_user_model
+
 def index(request):
     return render(request, 'index.html')
+
+@api_view(['GET', 'POST'])
+def ckcekUsername(request):
+    ckusername = ''
+    for key in request.data.keys():
+        ckusername = key
+    user = get_user_model().objects.filter(username=ckusername)
+    
+    ckuser_list = []
+    for u in user:
+        ckuser_list.append({
+            'username': u.username, 
+        })
+
+    if len(ckuser_list) == 0:
+        return Response(True)
+    else:
+        return Response(False)
+
 
 def stagelist(request):
     stages = StageData.objects.all()
@@ -146,28 +166,4 @@ def MyReviewlist(request, user_Id):
             'created_at': myReview.created_at, 
             'updated_at': myReview.updated_at})
     return JsonResponse(myreview_list, safe=False)
-
-@api_view(['POST'])
-@permission_classes([AllowAny, ]) #모든 사용자 접근가능
-def signup(request):
-	#1-1. Client에서 온 데이터를 받아서
-    password1 = request.data.get('password')
-    password2 = request.data.get('password2')
-		
-	#1-2. 패스워드 일치 여부 체크
-    if password1 != password2:
-        return Response({'error': '비밀번호가 일치하지 않습니다.'}, status=status.HTTP_400_BAD_REQUEST)
-		
-	#2. UserSerializer를 통해 데이터 직렬화
-    serializer = UserSerializer(data=request.data)
-    
-	#3. validation 작업 진행 -> password도 같이 직렬화 진행
-    if serializer.is_valid(raise_exception=True):
-        user = serializer.save()
-        #4. 비밀번호 해싱 후 
-        user.set_password(request.data.get('password'))
-        user.save()
-    # password는 직렬화 과정에는 포함 되지만 → 표현(response)할 때는 나타나지 않는다.
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-        
 
