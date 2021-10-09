@@ -17,6 +17,10 @@
             <div class="myreview-item-content">{{myreview.reviewContents}} </div>
             <div class="myreview-item-date">{{$moment(myreview.created_at).format('YYYY-MM-DD')}}</div>
           </div>
+          <div>
+            <button @click="delete_my_reviews(myreview.id)">삭제</button>
+            <button @click="detailshow(myreview.id)">수정</button>
+          </div>
       </div> 
     </div> 
   </div>
@@ -45,9 +49,29 @@ export default {
         this.reviewList = res.data;
       })
       .catch(err => {
-        console.log(err)
+        console.log(err);
       })
     },
+    delete_my_reviews: function (review_pk) {
+      axios.delete(`http://127.0.0.1:8000/review/${review_pk}/delete`)
+      .then(res => {             
+        console.log("DELETED", res);
+        this.reviewList.splice(review_pk, 1);
+        this.$router.go();
+        console.log("삭제성공");
+      })
+      .catch(err => {
+        console.log(err);
+      })
+    },
+    detailshow(index) {
+      this.$router.push({
+        name: "ReviewUpdate",
+        params: {
+          ReviewId: index
+        }
+      });
+    }
   },
 }
 </script>

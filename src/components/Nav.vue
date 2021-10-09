@@ -8,7 +8,9 @@
     <div class="nav-menu">
       <div class="nav-item">
         <button>
-          <b-icon icon="search"></b-icon>
+          <router-link :to="{ name: 'Search' }">
+            <b-icon icon="search"></b-icon>
+          </router-link>
         </button>
       </div>
       <div class="nav-item">
@@ -20,7 +22,7 @@
         >
           <b-dropdown-item v-if="isLogin">
             <router-link :to="{ name: 'MyReview' }">작성한 리뷰</router-link>
-            <div></div>
+            <b-dropdown-divider></b-dropdown-divider>
             <button @click="logout">Logout</button>
           </b-dropdown-item>
           <b-dropdown-item v-else router-link :to="{ name: 'Login' }">Login
@@ -46,7 +48,7 @@ export default {
       localStorage.removeItem('jwt'),
       this.$router.push({ name : 'Login'})
       this.$router.go()
-    }
+    },
   },
   created : function(){
     // 로컬스토리지에 jwt 이 존재하는지에 따라 로그인 여부 판단하기
@@ -105,6 +107,10 @@ a > a{
 #my-nav-dropdown > ul {
   background-color: rgb(82, 82, 82);
   border: 1px solid rgb(90, 90, 90);
+}
+#my-nav-dropdown > ul > li :hover,
+#my-nav-dropdown > ul > li :focus {
+  background-color: inherit;
 }
 #my-nav-dropdown > ul > li > a > button {
   background-color: inherit;

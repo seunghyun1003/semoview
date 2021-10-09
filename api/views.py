@@ -10,6 +10,7 @@ from .serializers import UserSerializer, ReviewSerializer
 from django.shortcuts import get_object_or_404
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, JsonResponse
+from rest_framework.parsers import JSONParser 
 
 import json
 
@@ -29,12 +30,26 @@ def stagelist(request):
         stage_list.append({'id': stage.id, 'stageTitle': stage.stageTitle, 'stageImglink': stage.stageImglink})
     return JsonResponse(stage_list, safe=False)
 
+def getThisReview(request, review_id):
+    review = Review.objects.get(pk = review_id)
+    reviewdata = []
+
+    reviewdata.append({
+        'id': review.id, 
+        'stage_id': review.stage_id.id, 
+        'user_id': review.user_id.id, 
+        'reviewContents': review.reviewContents, 
+        'point': review.point, 
+        'created_at': review.created_at, 
+        'updated_at': review.updated_at
+    })
+    return JsonResponse(reviewdata, safe=False)
+
 def thisStageReviewlist(request, stage_pk):
     stages = StageData.objects.get(pk = stage_pk)
     reviews = Review.objects.all()
     thisStageReviews = reviews.filter(stage_id = stages.id)
     review_list = []
-
     for review in thisStageReviews:
         review_list.append({
             'id': review.id, 
@@ -64,8 +79,26 @@ def thisStageReviewCreate(request, stage_pk):
         
     return Response(serializer.errors)
 
+@api_view(['GET', 'PUT', 'DELETE'])
+@authentication_classes((JSONWebTokenAuthentication,))
+def reviewUpdate(request, review_pk):
+    review = Review.objects.get(pk = review_pk)
+    
+    if request.method == 'PUT' :
+        review_data = JSONParser().parse(request) 
+        serializer = ReviewSerializer(review, data=review_data)
+        if serializer.is_valid():
+            serializer.save() 
+            return Response(review_data, status=status.HTTP_201_CREATED)
+    else:
+        review = Review.objects.get(pk = review_pk)
+        serializer = ReviewSerializer(review)
+        return Response(serializer.data)
+        
+    return Response(serializer.errors)
+
 @api_view(['PUT', 'DELETE'])
-def thisStageReviewDelete(request, review_pk):
+def reviewDelete(request, review_pk):
     review = get_object_or_404(Review, pk=review_pk)
     if request.method == 'PUT':
         serializer = ReviewSerializer(review, data=request.data)
@@ -76,6 +109,7 @@ def thisStageReviewDelete(request, review_pk):
     elif request.method == 'DELETE':
         review.delete()
         return Response({ 'id': review_pk })
+
 
 def MyReviewlist(request, user_Id):
     reviews = Review.objects.all()

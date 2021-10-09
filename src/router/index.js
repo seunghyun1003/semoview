@@ -4,7 +4,9 @@ import Home from '@/views/Home.vue'
 import MyReview from '@/views/MyReview.vue'
 import Signup from '@/views/Signup.vue'
 import Login from '@/views/Login.vue'
+import Search from '@/views/Search.vue'
 import Detail from '@/views/Detail.vue'
+import ReviewUpdate from '@/views/ReviewUpdate.vue'
 
 Vue.use(Router)
 
@@ -31,9 +33,19 @@ export default new Router({
       component: Login
     },
     {
+      path: '/search',
+      name: 'Search',
+      component: Search
+    },
+    {
       path: '/detail/:contentId?',
       name: 'Detail',
       component: Detail
+    },
+    {
+      path: '/update/:ReviewId?',
+      name: 'ReviewUpdate',
+      component: ReviewUpdate
     },
   ]
 })

@@ -21,4 +21,9 @@ urlpatterns = [
     path('get/myreviews/userId/<user_Id>', views.MyReviewlist, name='MyReviewlist'),
 
     path('stage/<stage_pk>/create', views.thisStageReviewCreate, name='thisStageReviewCreate'),
+    path('review/<review_pk>/delete', views.reviewDelete, name='reviewDelete'),
+    path('get/review/<review_id>', views.getThisReview, name='getThisReview'),
+    path('review/<review_pk>/update', views.reviewUpdate, name='reviewUpdate'),
 ]
+
+
