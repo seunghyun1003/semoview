@@ -50,7 +50,7 @@
                 placeholder="내용을 입력해주세요."
                 required
                 ></b-form-textarea>
-                <div>
+                <div class="btns">
                     <b-button type="reset">취소</b-button>
                     <b-button type="submit" variant="primary">완료</b-button>
                 </div>
@@ -183,79 +183,96 @@ export default {
 </script>
 
 <style scoped>
-  #detail {
+#detail {
     overflow: auto ;
-  }
-  #stage-item{
+}
+#stage-item{
     border-bottom: 1px solid rgb(157, 157, 157);
-  }
-  .stage-title{
+}
+.stage-title{
     font-weight: bolder;
     font-size: 1.2em;
     text-align: left;
-  }
-  .stage-info{
+}
+.stage-info{
     padding: 1.6em 2em 1.8em;
-  }
-  #item-img{
+}
+#item-img{
     min-width: 120px;
     width: 120px;
     height: 8em;
     padding: 0 1em 0 0;
-  }
-  #item-img img{
+}
+#item-img img{
     width: 100%;
     height: 100%;
-  }
+}
 
 
-  #review{
+#review{
     padding: 1em;
-  }
-  .review-header{
+}
+.review-header{
     display: flex;
     justify-content: space-between;
-  }
-  .review-title{
+}
+.review-title{
     font-size: 1.1em;
     font-weight: bold;
-    padding-bottom: 0.8em; 
-  }
-  .review-write-btn > button{
+}
+.review-write-btn > button{
     background-color: rgb(231, 194, 43);
     border: none;
     color: black;
-  }
+}
 
-  .review-item{
+.review-item{
     display: flex;
     justify-content: space-between;
     padding: 0.6em 0.6em;
-  }
-  #review-item-1{
+}
+#review-item-1{
     text-align: left;
-  }
-  #review-item-2{
+}
+#review-item-2{
     text-align: right;
-  }
-  .review-item-username{
+}
+.review-item-username{
     font-size: 1.1em;
 
-  }
-  .review-item-point {
+}
+.review-item-point {
     font-size: 0.6em;
     color: rgb(231, 194, 43);
-  }
-  .review-item-date {
+}
+.review-item-date {
     font-size: 0.6em;
     color: gray;
-  }
-  .review-item-content{
+}
+.review-item-content{
     padding: 0.4em 0 0.2em 1.4em;
     font-size: 0.86em;
-  }
+}
 
-  #review-item > div > div.vue-star-rating {
+#review-item > div > div.vue-star-rating {
     justify-content: center;
-  }
+}
+
+
+.vue-star-rating{
+    justify-content: center;
+    margin: 0.8em 0 1.5em 0;
+}
+textarea {
+    height: 10em;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    margin-top: 1.5em;
+}
+.btns > button{
+    width: 47%;
+}
 </style>

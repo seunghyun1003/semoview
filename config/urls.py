@@ -24,6 +24,8 @@ urlpatterns = [
     path('review/<review_pk>/delete', views.reviewDelete, name='reviewDelete'),
     path('get/review/<review_id>', views.getThisReview, name='getThisReview'),
     path('review/<review_pk>/update', views.reviewUpdate, name='reviewUpdate'),
+
+    path('search/keyword/<keyword>', views.getSeachResult, name='getSeachResult'),
 ]
 
 

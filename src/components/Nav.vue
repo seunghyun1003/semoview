@@ -40,7 +40,7 @@ export default {
   data: function () {
     return {
       isLogin : false,
-      username : jwt_decode(localStorage.getItem('jwt')).username,
+      username : this.isLogin? jwt_decode(localStorage.getItem('jwt')).username : "-",
     }
   },
   methods: {
@@ -55,6 +55,7 @@ export default {
     const token = localStorage.getItem('jwt')
     if(token){
       this.isLogin = true
+      this.username = jwt_decode(localStorage.getItem('jwt')).username
     }
   }
 }

@@ -6,20 +6,24 @@
     <div class="myreview-list">        
       <div class="myreview-item" v-for="myreview in reviewList" :key="myreview.id">
           <div id="myreview-item-1">
-            <div class="myreview-item-title"><strong>{{myreview.stage_stageTitle}}</strong></div> 
-            <div class="myreview-item-point">
-              <span v-for="myreview in myreview.point" :key=myreview.point>★</span>
-              <span v-for="myreview in 5-myreview.point" :key=myreview.point>☆</span>
-              <span> ({{myreview.point}})</span>
-            </div>  
+            <div id="myreview-item-1-1">
+              <div class="myreview-item-title"><strong>{{myreview.stage_stageTitle}}</strong></div>
+              <div class="myreview-item-point">
+                <span v-for="myreview in myreview.point" :key=myreview.point>★</span>
+                <span v-for="myreview in 5-myreview.point" :key=myreview.point>☆</span>
+                <span> ({{myreview.point}})</span>
+              </div>  
+            </div>
+            <div id="myreview-item-1-2">
+              <button @click="delete_my_reviews(myreview.id)">삭제</button>
+              <button @click="detailshow(myreview.id)">수정</button>
+            </div> 
+
+            
           </div>
           <div id="myreview-item-2">
             <div class="myreview-item-content">{{myreview.reviewContents}} </div>
             <div class="myreview-item-date">{{$moment(myreview.created_at).format('YYYY-MM-DD')}}</div>
-          </div>
-          <div>
-            <button @click="delete_my_reviews(myreview.id)">삭제</button>
-            <button @click="detailshow(myreview.id)">수정</button>
           </div>
       </div> 
     </div> 
@@ -89,7 +93,17 @@ export default {
     border-top: 1px solid rgb(72, 72, 72);
   }
   #myreview-item-1{
+    display: flex;
     text-align: left;
+    justify-content: space-between;
+  }
+  #myreview-item-1-2 > button{
+    border:none;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    font-size: 0.7em;
+    padding: 0.2em 0.4em;
+    margin-left: 0.7em;
   }
   #myreview-item-2{
     text-align: right;
@@ -103,6 +117,7 @@ export default {
   .myreview-item-point{
     color: rgb(231, 194, 43);
     font-size: 0.8em;
+    margin-bottom: 0.6em;
   }
   .myreview-item-date {
     font-size: 0.6em;

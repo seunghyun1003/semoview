@@ -17,7 +17,7 @@
                 v-bind:placeholder=form.content
                 required
                 ></b-form-textarea>
-                <div>
+                <div class="btns">
                     <b-button type="reset">취소</b-button>
                     <b-button type="submit" variant="primary">완료</b-button>
                 </div>
@@ -82,8 +82,8 @@ export default {
             point : this.form.point,
             reviewContents : this.form.content,
         })
-        .then(res => {       
-            console.log(res)
+        .then(res => { 
+            console.log(res.status, "Review Updated")      
             this.$router.push({name: "MyReview"});
         })
         .catch(err => {
@@ -92,7 +92,7 @@ export default {
     },
     onReset() {
       this.$router.push({name: "MyReview"});
-      console.log("Update Reset")
+      console.log("Cancel Review Update")
     },
   }
 }
@@ -100,4 +100,24 @@ export default {
 </script>
 
 <style scoped>
+.review-title{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.vue-star-rating{
+    justify-content: center;
+    margin: 0.8em 0 1.5em 0;
+}
+textarea {
+    height: 10em;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    margin-top: 1.5em;
+}
+.btns > button{
+    width: 47%;
+}
 </style>

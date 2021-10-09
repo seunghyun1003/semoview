@@ -27,7 +27,11 @@ def stagelist(request):
     stage_list = []
 
     for stage in stages:
-        stage_list.append({'id': stage.id, 'stageTitle': stage.stageTitle, 'stageImglink': stage.stageImglink})
+        stage_list.append({
+            'id': stage.id, 
+            'stageTitle': stage.stageTitle, 
+            'stageImglink': stage.stageImglink
+        })
     return JsonResponse(stage_list, safe=False)
 
 def getThisReview(request, review_id):
@@ -62,6 +66,19 @@ def thisStageReviewlist(request, stage_pk):
             'updated_at': review.updated_at})
     return JsonResponse(review_list, safe=False)
 
+def getSeachResult(request, keyword):
+    stages = StageData.objects.all()
+    searchedStages = stages.filter(stageTitle__contains=keyword)
+    searched_stages_list = []
+    for stage in searchedStages:
+        searched_stages_list.append({
+            'id': stage.id, 
+            'stageTitle': stage.stageTitle, 
+            'stageImglink': stage.stageImglink
+        })
+    return JsonResponse(searched_stages_list, safe=False)
+
+
 @api_view(['GET', 'POST'])
 @authentication_classes((JSONWebTokenAuthentication,))
 def thisStageReviewCreate(request, stage_pk):
@@ -83,7 +100,7 @@ def thisStageReviewCreate(request, stage_pk):
 @authentication_classes((JSONWebTokenAuthentication,))
 def reviewUpdate(request, review_pk):
     review = Review.objects.get(pk = review_pk)
-    
+
     if request.method == 'PUT' :
         review_data = JSONParser().parse(request) 
         serializer = ReviewSerializer(review, data=review_data)
