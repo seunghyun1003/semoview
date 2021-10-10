@@ -1,7 +1,8 @@
 <template>
   <div id="myreview">
     <div class="page-title">
-      {{username}}님의 리뷰 ({{reviewList.length}}개)
+      <div class="page-title-1">{{username}}님의 리뷰 </div>
+      <div class="page-title-2"><span>★ </span> {{this.avg}} ({{reviewList.length}})</div>
     </div>
     <div class="myreview-list">        
       <div class="myreview-item" v-for="myreview in reviewList" :key="myreview.id">
@@ -9,9 +10,8 @@
             <div id="myreview-item-1-1">
               <div class="myreview-item-title"><strong>{{myreview.stage_stageTitle}}</strong></div>
               <div class="myreview-item-point">
-                <span v-for="myreview in myreview.point" :key=myreview.point>★</span>
+                <span class="filled" v-for="myreview in myreview.point" :key=myreview.point>★</span>
                 <span v-for="myreview in 5-myreview.point" :key=myreview.point>☆</span>
-                <span> ({{myreview.point}})</span>
               </div>  
             </div>
             <div id="myreview-item-1-2">
@@ -40,6 +40,7 @@ export default {
     return {
       username : jwt_decode(localStorage.getItem('jwt')).username,
       reviewList : [],
+      avg : null,
     }
   },
   created: function() {
@@ -51,6 +52,7 @@ export default {
       axios.get(`http://127.0.0.1:8000/get/myreviews/userId/${userId}`)
       .then(res => {             
         this.reviewList = res.data;
+        this.computedAvg();
       })
       .catch(err => {
         console.log(err);
@@ -75,6 +77,16 @@ export default {
           ReviewId: index
         }
       });
+    },
+    computedAvg: function() {
+      let sum = 0
+      let avg = 0
+      for (let i = 0; i < this.reviewList.length; i++) {
+        sum += this.reviewList[i].point
+      }
+      avg = Math.round(sum/this.reviewList.length * 10) / 10
+
+      this.avg = avg
     }
   },
 }
@@ -82,12 +94,21 @@ export default {
 
 <style scoped>
   .page-title{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-title-1{
     font-weight: bolder;
     font-size: 1.2em;
-    text-align: left;
-    margin-bottom: 1em;
   }
-
+  .page-title-2{
+    font-size: 0.8em;
+  }
+  .page-title-2 > span{
+    color: rgb(231, 194, 43);
+  }
   .myreview-item{
     padding: 1em 0.8em;
     border-top: 1px solid rgb(72, 72, 72);
@@ -100,7 +121,7 @@ export default {
   #myreview-item-1-2 > button{
     border:none;
     background-color: rgb(85, 85, 85);
-    color: white;
+    color: rgb(211, 211, 211);
     font-size: 0.7em;
     padding: 0.2em 0.4em;
     margin-left: 0.7em;
@@ -115,9 +136,11 @@ export default {
     font-size: 0.86em;
   }
   .myreview-item-point{
-    color: rgb(231, 194, 43);
     font-size: 0.8em;
     margin-bottom: 0.6em;
+  }
+  .myreview-item-point > .filled{
+    color: rgb(231, 194, 43);
   }
   .myreview-item-date {
     font-size: 0.6em;

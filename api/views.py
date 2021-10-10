@@ -46,13 +46,30 @@ def stagelist(request):
     stages = StageData.objects.all()
     stage_list = []
 
+    reviews = Review.objects.all()
+
     for stage in stages:
+        thisStageReviews = reviews.filter(stage_id = stage.id)
         stage_list.append({
             'id': stage.id, 
             'stageTitle': stage.stageTitle, 
-            'stageImglink': stage.stageImglink
+            'stageImglink': stage.stageImglink,
+            'pointAvg' : getPointAvg(thisStageReviews),
+            'reviewCount' : len(thisStageReviews),
         })
     return JsonResponse(stage_list, safe=False)
+
+def getPointAvg(thisStageReviews):
+    sum = 0
+    count = len(thisStageReviews)
+
+    if count != 0 :
+        for review in thisStageReviews:
+            sum += review.point
+        avg = sum/count
+        return "{:.1f}".format(avg)
+    else:
+        return 0
 
 def getThisReview(request, review_id):
     review = Review.objects.get(pk = review_id)
@@ -74,8 +91,9 @@ def thisStageReviewlist(request, stage_pk):
     reviews = Review.objects.all()
     thisStageReviews = reviews.filter(stage_id = stages.id)
     review_list = []
+
     for review in thisStageReviews:
-        review_list.append({
+        review_list.insert(0, {
             'id': review.id, 
             'stage_id': review.stage_id.id, 
             'user_id': review.user_id.id, 
@@ -155,7 +173,7 @@ def MyReviewlist(request, user_Id):
     myreview_list = []
 
     for myReview in myReviews:
-        myreview_list.append({
+        myreview_list.insert(0, {
             'id': myReview.id, 
             'stage_id': myReview.stage_id.id, 
             'stage_stageTitle' : stages[myReview.stage_id.id-1].stageTitle,

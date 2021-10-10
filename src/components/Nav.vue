@@ -14,13 +14,13 @@
           right
         >
           <b-dropdown-item router-link :to="{ name: 'Search' }">
-            Search <b-icon icon="search"></b-icon>
+            <strong>검색 <b-icon icon="search"></b-icon></strong> 
           </b-dropdown-item>
           <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-item v-if="isLogin">
             <router-link :to="{ name: 'MyReview' }">작성한 리뷰</router-link>
             <div></div>
-            <button @click="logout">Logout</button>
+            <button @click="logout"><strong>로그아웃</strong></button>
           </b-dropdown-item>
           <b-dropdown-item v-else router-link :to="{ name: 'Signin' }">SignIn / SignUp
           </b-dropdown-item>
@@ -106,16 +106,17 @@ a > a{
   background-color: rgb(82, 82, 82);
   border: 1px solid rgb(90, 90, 90);
   text-align: center;
+  margin: 0;
+  padding: 0 ;
 }
 #my-nav-dropdown > ul > li :hover,
 #my-nav-dropdown > ul > li :focus {
   background-color: inherit;
 }
-#my-nav-dropdown > ul > li > a > button {
+#my-nav-dropdown > ul > li > a > button{
   background-color: inherit;
   border: none;
   color: white;
-  font-size: bold;
   padding: 0;
 }
 </style>

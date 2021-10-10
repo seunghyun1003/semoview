@@ -16,7 +16,11 @@
       <div class="item" v-for="stage in stageList.slice(perPage*(currentPage-1),perPage*(currentPage))" :key="stage.id" @click="detailshow(stage.id)">
           <div id="item-id">{{stage.id}} </div> 
           <div id="item-img"><img :src="stage.stageImglink" alt /></div>
-          <div id="item-title"><span><strong>{{stage.stageTitle}}</strong></span></div> 
+          <div id="item-title">
+            <span>
+              <strong>{{stage.stageTitle}} <div><span>★</span>  {{stage.pointAvg}} ({{stage.reviewCount}})</div></strong>
+            </span>
+          </div>
       </div> 
       <b-pagination
         v-model="currentPage"
@@ -41,7 +45,7 @@ export default {
     return {
       stageList : [],
       currentPage: 1,
-      perPage: 40,
+      perPage: 20,
     }
   },
   created: function() {
@@ -128,7 +132,12 @@ export default {
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
   }
-
+  #item-title > span > strong > div{
+    padding-top: 0.6em;
+  }
+  #item-title > span > strong > div > span{
+    color: rgb(231, 194, 43);
+    }
   .pagination{
     margin-top: 1.4em;
   }

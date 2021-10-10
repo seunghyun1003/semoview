@@ -1,65 +1,74 @@
 <template>
-  <div id="detail">
-    <div id="stage-item">
-        <div class="stage-info">
-            <div id="item-img"><img :src="stage.stageImglink" alt /></div>
-        </div>
-        <div class="stage-title">{{stage.stageTitle}}</div>
-    </div>
-    
-    <div id="review">
-        <div v-if="isShow == false">
-            <div class="review-header">
-                <div class="review-title">리뷰 ({{reviewList.length}}개)</div>
-                <div class="review-write-btn">
-                    <button @click="showReviewForm()">
-                        <b-icon icon="pencil-square"></b-icon>
-                    </button>
+    <div id="detail">
+        <div id="stage-item">
+            <div class="stage-info">
+                <div id="item-img"><img :src="stage.stageImglink" alt /></div>
+            </div>
+            <div>
+                <div class="stage-title">
+                    {{stage.stageTitle}}
                 </div>
             </div>
-            <div v-for="review in reviewList" :key="review.id" class="review-item">
-                <div id="review-item-1">
-                    <div class="review-item-username">{{review.user_username}}</div>
-                    <div class="review-item-point">
-                        <span v-for="review in review.point" :key=review.point>★</span>
-                        <span v-for="review in 5-review.point" :key=review.point>☆</span>
-                        <span> ({{review.point}})</span>
+        </div>
+
+        <div id="review">
+            <div v-if="isShow == false">
+                <div class="review-header">
+                    <div class="review-title">최근 리뷰 
+                        <div><span>★</span> {{stage.pointAvg}} ({{stage.reviewCount}})</div>
+                    </div>
+                    <div class="review-write-btn">
+                        <button @click="showReviewForm()" v-b-modal.modal-prevent-closing>
+                            <b-icon icon="pencil-square"></b-icon>
+                        </button>
                     </div>
                 </div>
-                <div id="review-item-2">
-                    <div class="review-item-content">{{review.reviewContents}}</div>
-                    <div class="review-item-date">{{$moment(review.created_at).format('YYYY-MM-DD')}}</div>
+                <b-modal
+                id="modal-prevent-closing"
+                ref="modal"
+                @ok="goLogin"
+                centered
+                >로그인이 필요한 서비스입니다. 로그인하시겠습니까?</b-modal>
+                <div v-for="review in reviewList" :key="review.id" class="review-item">
+                    <div id="review-item-1">
+                        <div class="review-item-username">{{review.user_username}}</div>
+                        <div class="review-item-point">
+                            <span class="filled" v-for="review in review.point" :key=review.point>★</span>
+                            <span v-for="review in 5-review.point" :key=review.point>☆</span>
+                        </div>
+                    </div>
+                    <div id="review-item-2">
+                        <div class="review-item-content">{{review.reviewContents}}</div>
+                        <div class="review-item-date">{{$moment(review.created_at).format('YYYY-MM-DD')}}</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div v-else>
-            <div class="review-title">연극은 어떠셨나요?</div>
-            <b-form @submit="onSubmit" @reset="onReset">
-                <star-rating 
-                    v-model="form.point"
-                    v-bind:increment="1"
-                    v-bind:max-rating="5"
-                    inactive-color="white"
-                    active-color="gold"
-                    v-bind:star-size="40"
-                ></star-rating>
-                <b-form-textarea
-                id="input-2"
-                v-model="form.content"
-                placeholder="내용을 입력해주세요."
-                required
-                ></b-form-textarea>
-                <div class="btns">
-                    <b-button type="reset">취소</b-button>
-                    <b-button type="submit" variant="primary">완료</b-button>
-                </div>
+            
+            <div v-else>
+                <div class="review-title">연극은 어떠셨나요?</div>
+                <b-form @submit="onSubmit" @reset="onReset">
+                    <star-rating 
+                        v-model="form.point"
+                        v-bind:increment="1"
+                        v-bind:max-rating="5"
+                        inactive-color="white"
+                        active-color="gold"
+                        v-bind:star-size="40"
+                    ></star-rating>
+                    <b-form-textarea
+                    id="input-2"
+                    v-model="form.content"
+                    placeholder="내용을 입력해주세요."
+                    required
+                    ></b-form-textarea>
+                    <div class="btns">
+                        <b-button type="reset">취소</b-button>
+                        <b-button type="submit" variant="primary">완료</b-button>
+                    </div>
                 </b-form>
+            </div>
         </div>
     </div>
-
-    
-  </div>
 </template>
 
 <script>
@@ -85,11 +94,11 @@ export default {
     };
   },
   created: function() {
+    this.fetch_this_stage(); 
+    this.fetch_all_review();
     if(localStorage.getItem('jwt')){
       this.isLogin = true
     } else this.isLogin = false;
-    this.fetch_this_stage(); 
-    this.fetch_all_review();
   },
   methods: {
     setToken : function () { // header 내용에 토큰 붙여주기
@@ -124,10 +133,13 @@ export default {
     },
     showReviewForm() {
         if (this.isLogin == false) {
-            alert('로그인이 필요한 서비스입니다.')
+            console.log("modal show")
         } else {
             this.isShow = true
         }
+    },
+    goLogin() {
+        this.$router.push({ name : 'Signin'})
     },
     onSubmit(event) {
         event.preventDefault()
@@ -189,6 +201,7 @@ export default {
 #stage-item{
     display: flex;
     border-bottom: 1px solid rgb(157, 157, 157);
+    text-align: left;
 }
 .stage-title{
     font-weight: bolder;
@@ -196,8 +209,15 @@ export default {
     text-align: left;
     margin-top: 0.8em;
 }
+.stage-title > div{
+    font-size: 0.8em;
+    padding-top: 0.6em;
+}
 .stage-info{
     padding: 0.8em 0.6em 1.8em;
+}
+.stage-pointAvg{
+    font-size: 0.8em;
 }
 #item-img{
     min-width: 140px;
@@ -221,6 +241,15 @@ export default {
 .review-title{
     font-size: 1.1em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.review-title > div{
+    font-size: 0.8em;
+    padding-left: 1em;
+}
+.review-title > div > span{
+    color: rgb(231, 194, 43);
 }
 .review-write-btn > button{
     background-color: rgb(231, 194, 43);
@@ -245,6 +274,8 @@ export default {
 }
 .review-item-point {
     font-size: 0.6em;
+}
+.review-item-point .filled {
     color: rgb(231, 194, 43);
 }
 .review-item-date {
@@ -277,4 +308,5 @@ textarea {
 .btns > button{
     width: 47%;
 }
+
 </style>
