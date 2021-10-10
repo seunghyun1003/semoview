@@ -56,7 +56,7 @@ export default {
       keyword: '',
       resultList : [],
       currentPage: 1,
-      perPage: 10,
+      perPage: 15,
     }
   },
   methods: {
@@ -122,7 +122,7 @@ text-align: left;
   height: 2.375em;
   background-color: rgb(192, 57, 43);
   border: 1px solid gray;
-  border-radius: 0.4em;
+  border-radius: 0.25em;
   color: white;
   font-weight: 600;
 }
@@ -170,6 +170,6 @@ display: -webkit-box;
 }
 
 .pagination{
-margin-top: 1.4em;
+    margin: 1.4em 0;
 }
 </style>

@@ -37,7 +37,9 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo',
+  'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

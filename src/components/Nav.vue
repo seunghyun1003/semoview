@@ -2,7 +2,7 @@
   <div id="nav">
     <div class="logo">
       <router-link to="/">
-        <strong>SEMOVIEW</strong>
+        <strong>MOVIEW</strong>
       </router-link>
     </div>
     <div class="nav-menu">

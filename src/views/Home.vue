@@ -2,12 +2,11 @@
   <div id="home">
     <div id="home-header">
       <div class="header-title">
-        <button @click="toggleRank()">
-          <span v-if="buttontoggle == 1">예매랭킹순</span>
-          <span v-else-if="buttontoggle == 2">리뷰평점순</span>
-          <span v-else>리뷰개수순</span>
-          <b-icon icon="arrow-clockwise"></b-icon>
-        </button>
+        <div>
+          <button v-bind:class="setBtnColor(1)" @click="toggleRank(1)">예매랭킹순</button>
+          <button v-bind:class="setBtnColor(2)" @click="toggleRank(2)">리뷰평점순</button>
+          <button v-bind:class="setBtnColor(3)" @click="toggleRank(3)">리뷰개수순</button>
+        </div>
       </div>
       <div class="header-nav">
         <button>
@@ -83,21 +82,17 @@ export default {
         }
       });
     },
-    toggleRank:function () {
-      if (this.buttontoggle == 1) {
-        this.buttontoggle = 2
-        console.log('리뷰평점순')
-      } else if (this.buttontoggle == 2) {
-        this.buttontoggle = 3
-        console.log('리뷰개수순')
-      } else {
-        this.buttontoggle = 1
-        console.log('예매랭킹순')
-      }
-
+    toggleRank:function (condition) {
+      this.buttontoggle = condition
       localStorage.setItem('rank', this.buttontoggle)
-      this.fetch_all_stage();
+
+      this.fetch_all_stage()
       this.$router.go()
+    },
+    setBtnColor: function (condition) {
+      if (this.buttontoggle == condition) {
+        return 'actBtn'
+      } else return 'deactBtn'
     }
   }
 }
@@ -111,16 +106,20 @@ export default {
     display: flex;
     justify-content: space-between;
   }
-  .header-title{
-  }
-  .header-title > button{
+  .header-title > div > button{
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 0.85em;
     text-align: left;
     text-align: left;
-    background-color: inherit;
+    border-radius: 0.4em;
     border: none;
-    color: white
+    margin-right: 0.6em;
+    padding: 0.25em 0.5em;
+    background-color: rgb(75, 75, 75);
+    color: white;
+  }
+  .actBtn{
+    background-color: rgb(192, 57, 43) !important;
   }
   .header-nav > button{
     color: white;
@@ -128,8 +127,6 @@ export default {
     border: none;
     padding:0 1em;
     text-decoration:none;
-  }
-  .stage-list{
   }
   .item{
     display: flex;
@@ -172,8 +169,8 @@ export default {
   }
   #item-title > span > strong > div > span{
     color: rgb(231, 194, 43);
-    }
+  }
   .pagination{
-    margin-top: 1.4em;
+    margin: 1.4em 0;
   }
 </style>
