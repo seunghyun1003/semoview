@@ -2,7 +2,12 @@
   <div id="home">
     <div id="home-header">
       <div class="header-title">
-        예매랭킹
+        <button @click="toggleRank()">
+          <span v-if="buttontoggle == 1">예매랭킹순</span>
+          <span v-else-if="buttontoggle == 2">리뷰평점순</span>
+          <span v-else>리뷰개수순</span>
+          <b-icon icon="arrow-clockwise"></b-icon>
+        </button>
       </div>
       <div class="header-nav">
         <button>
@@ -43,6 +48,7 @@ export default {
   name: 'Home',
   data() {
     return {
+      buttontoggle: localStorage.getItem('rank'),
       stageList : [],
       currentPage: 1,
       perPage: 20,
@@ -53,21 +59,44 @@ export default {
   },
   methods: {
     fetch_all_stage: function () {
-      axios.get('http://127.0.0.1:8000/stages')
-      .then(res => {             
+      let url = ''
+      if (this.buttontoggle == 1) {
+        url = 'http://127.0.0.1:8000/stages_1'
+      } else if (this.buttontoggle == 2) {
+        url = 'http://127.0.0.1:8000/stages_2'
+      } else {
+        url = 'http://127.0.0.1:8000/stages_3'
+      }
+      axios.get(url)
+      .then(res => {         
         this.stageList = res.data;
       })
       .catch(err => {
         console.log(err)
       })
     },
-    detailshow(index) {
+    detailshow:function (index) {
       this.$router.push({
         name: "Detail",
         params: {
           contentId: index
         }
       });
+    },
+    toggleRank:function () {
+      if (this.buttontoggle == 1) {
+        this.buttontoggle = 2
+        console.log('리뷰평점순')
+      } else if (this.buttontoggle == 2) {
+        this.buttontoggle = 3
+        console.log('리뷰개수순')
+      } else {
+        this.buttontoggle = 1
+        console.log('예매랭킹순')
+      }
+
+      localStorage.setItem('rank', this.buttontoggle)
+      this.fetch_all_stage();
       this.$router.go()
     }
   }
@@ -83,9 +112,15 @@ export default {
     justify-content: space-between;
   }
   .header-title{
+  }
+  .header-title > button{
     font-weight: bolder;
     font-size: 1.2em;
     text-align: left;
+    text-align: left;
+    background-color: inherit;
+    border: none;
+    color: white
   }
   .header-nav > button{
     color: white;

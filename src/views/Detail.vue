@@ -109,7 +109,7 @@ export default {
       return config
     },
     fetch_this_stage: function () {
-      axios.get('http://127.0.0.1:8000/stages')
+      axios.get('http://127.0.0.1:8000/stages_1')
       .then(res => {             
         const index = this.$route.params.contentId-1
         this.stage = res.data[index]
@@ -162,7 +162,7 @@ export default {
             this.form.point = 0  
             this.form.content = ''
             this.isShow = false
-            this.fetch_all_review()
+            this.$router.go()
         })
         .catch(err => {
             console.log(err)

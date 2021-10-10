@@ -42,7 +42,7 @@ def ckcekUsername(request):
         return Response(False)
 
 
-def stagelist(request):
+def stagelist_1(request):
     stages = StageData.objects.all()
     stage_list = []
 
@@ -57,7 +57,51 @@ def stagelist(request):
             'pointAvg' : getPointAvg(thisStageReviews),
             'reviewCount' : len(thisStageReviews),
         })
+
     return JsonResponse(stage_list, safe=False)
+
+
+# 정렬 : 리뷰평점순 
+def stagelist_2(request):
+    stages = StageData.objects.all()
+    stage_list = []
+    result = []
+
+    reviews = Review.objects.all()
+
+    for stage in stages:
+        thisStageReviews = reviews.filter(stage_id = stage.id)
+        stage_list.append({
+            'id': stage.id, 
+            'stageTitle': stage.stageTitle, 
+            'stageImglink': stage.stageImglink,
+            'pointAvg' : getPointAvg(thisStageReviews),
+            'reviewCount' : len(thisStageReviews),
+        })
+
+    result = sorted(stage_list, key = lambda item: float(item['pointAvg']), reverse = True)
+    return JsonResponse(result, safe=False)
+
+# 정렬 : 리뷰개수순
+def stagelist_3(request):
+    stages = StageData.objects.all()
+    stage_list = []
+    result = []
+
+    reviews = Review.objects.all()
+
+    for stage in stages:
+        thisStageReviews = reviews.filter(stage_id = stage.id)
+        stage_list.append({
+            'id': stage.id, 
+            'stageTitle': stage.stageTitle, 
+            'stageImglink': stage.stageImglink,
+            'pointAvg' : getPointAvg(thisStageReviews),
+            'reviewCount' : len(thisStageReviews),
+        })
+        
+    result = sorted(stage_list, key = lambda item: int(item['reviewCount']), reverse = True)
+    return JsonResponse(result, safe=False)
 
 def getPointAvg(thisStageReviews):
     sum = 0

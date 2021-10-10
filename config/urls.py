@@ -17,7 +17,9 @@ urlpatterns = [
     path('ckeck/username', views.ckcekUsername, name='ckcekUsername'),
 
     path('', views.index, name='index'),
-    path('stages', views.stagelist, name='stagelist'),
+    path('stages_1', views.stagelist_1, name='stagelist_1'), #예매랭킹순
+    path('stages_2', views.stagelist_2, name='stagelist_2'), #리뷰평점순
+    path('stages_3', views.stagelist_3, name='stagelist_3'), #리뷰개수순
     path('reviews/<stage_pk>', views.thisStageReviewlist, name='thisStageReviewlist'),
     
     path('get/myreviews/userId/<user_Id>', views.MyReviewlist, name='MyReviewlist'),
