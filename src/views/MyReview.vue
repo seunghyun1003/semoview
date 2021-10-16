@@ -164,16 +164,25 @@ export default {
   font-size: 0.6em;
   color: gray;
 }
-@media screen and (max-width: 320px) {
-  #myreview-item-1 {
-    display: block;
+@media screen and (max-width: 300px) {
+  .page-title-1 {
+    font-size: 1em;
+  }
+  .myreview-item {
+    padding: 0.8em 0.4em;
   }
   #myreview-item-1-2 > button {
-    border: none;
-    background-color: rgb(85, 85, 85);
-    color: rgb(225, 225, 225);
-    font-size: 0.7em;
-    padding: 0.2em 0.4em;
+    font-size: 0.6em;
+    margin: 0 0.7em 0.6em 0;
+  }
+  .myreview-item-title {
+    font-size: 0.8em;
+  }
+  .myreview-item-content {
+    font-size: 0.86em;
+  }
+  .myreview-item-point {
+    margin-bottom: 0.2em;
   }
 }
 </style>

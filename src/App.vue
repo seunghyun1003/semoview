@@ -51,4 +51,7 @@ a:focus,
 a {
   color: white !important;
 }
+p {
+  margin-bottom: 0;
+}
 </style>

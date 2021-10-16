@@ -190,4 +190,49 @@ export default {
     flex-basis: 20%;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .search-result {
+    margin-top: 0.8em;
+  }
+  .item > p {
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+  }
+  .item > div {
+    display: flex;
+    height: 7.2em;
+    line-height: 7.2em;
+    padding: 0 0.4em;
+  }
+  #item-id {
+    color: rgba(192, 58, 43);
+    font-weight: bold;
+    font-size: large;
+    padding: 0 0.8em 0 0;
+  }
+  #item-img {
+    min-width: 90px;
+    width: 90px;
+    height: 6em;
+    padding: 0 0.6em 0 0;
+  }
+  #item-img img {
+    width: 100%;
+    height: 100%;
+  }
+  #item-title {
+    padding-top: 0.8em;
+    font-size: small;
+    white-space: normal;
+    line-height: 1.2;
+    height: 4.2em;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
 </style>

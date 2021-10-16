@@ -36,12 +36,12 @@
         <div class="item-img"><img :src="stage.stageImglink" alt /></div>
         <div class="item-title">
           <span>
-            <strong>{{ stage.stageTitle }}</strong>
             <div>
               <span class="filled">★</span> {{ stage.pointAvg }} ({{
                 stage.reviewCount
               }})
             </div>
+            <strong>{{ stage.stageTitle }}</strong>
           </span>
         </div>
       </div>
@@ -178,15 +178,16 @@ export default {
   font-size: small;
   white-space: normal;
   line-height: 1.2;
-  height: 3.6em;
+  height: 4.2em;
   text-align: left;
   word-wrap: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .item-title > span > div {
-  padding-top: 0.6em;
+  padding-bottom: 0.6em;
 }
 .item-title .filled {
   color: rgb(231, 194, 43);
@@ -210,6 +211,47 @@ export default {
   }
   .header-title > div > button {
     margin: 0 0.4em 0.2em 0;
+  }
+
+  .item {
+    display: flex;
+    height: 7.2em;
+    line-height: 7.2em;
+    padding: 0 0.4em;
+  }
+  .item-id {
+    color: rgba(192, 58, 43);
+    font-weight: bold;
+    font-size: large;
+    padding: 0 0.8em 0 0;
+  }
+  .item-img {
+    min-width: 90px;
+    width: 90px;
+    height: 6em;
+    padding: 0 0.6em 0 0;
+  }
+  .item-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .item-title {
+    padding-top: 0.8em;
+  }
+  .item-title > span {
+    font-size: small;
+    white-space: normal;
+    line-height: 1.2;
+    height: 4.2em;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .item-title > span > div {
+    padding-bottom: 0.6em;
   }
 }
 </style>

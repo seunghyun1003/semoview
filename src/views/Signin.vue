@@ -1,7 +1,7 @@
 <template>
   <div id="signin">
     <div class="errorMsg">{{ message }}</div>
-    <h1><strong>Signin</strong></h1>
+    <h1><b>Signin</b></h1>
     <div>
       <label for="username"></label>
       <input
