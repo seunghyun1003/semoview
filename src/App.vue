@@ -1,63 +1,54 @@
 <template>
   <div id="app">
-    <Nav/>
+    <Nav />
     <div id="contents">
-      <router-view/>
+      <router-view />
     </div>
-    <button id="toTop" 
-      @click="ScrollTop()"
-      width="55" 
-      height="55" 
-      style="display:scroll;position:fixed;bottom:10px;right:10px;" >
-      <b-icon 
-        icon="arrow-up-circle"
-        title="맨 위로"
-      ></b-icon>
-    </button>
   </div>
 </template>
 
 <script>
-import Nav from './components/Nav.vue';
+import Nav from "./components/Nav.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Nav
+    Nav,
   },
   methods: {
-    ScrollTop: function () {
+    ScrollTop: function() {
       this.$router.go("#");
     },
   },
-}
+};
 </script>
-
-
 
 <style>
 #app {
-  font-family: '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo',
-  'Inter', 'Spoqa Han Sans', 'Segoe UI', Sans-Serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: "-apple-system", "BlinkMacSystemFont", "Apple SD Gothic Neo",
+    "Inter", "Spoqa Han Sans", "Segoe UI", Sans-Serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: black;
   color: white;
   height: 100%;
-  overflow: auto ;
+  overflow: auto;
 }
-#contents{
+#contents {
   margin-top: 3em;
   padding: 1em;
   height: 100%;
 }
-ul, li{
-  list-style:none;
-  padding-left:0px;
+ul,
+li {
+  list-style: none;
+  padding-left: 0px;
 }
-a:active ,a:focus, a{
+a:active,
+a:focus,
+a {
   color: white !important;
 }
 </style>

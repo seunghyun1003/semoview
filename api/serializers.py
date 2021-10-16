@@ -19,3 +19,4 @@ class ReviewSerializer(serializers.ModelSerializer) :
     class Meta :
         model = Review
         fields = ['user_id', 'stage_id', 'reviewContents', 'point']
+
