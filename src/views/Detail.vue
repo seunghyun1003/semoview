@@ -5,10 +5,13 @@
         <div id="item-img"><img :src="stage.stageImglink" alt /></div>
       </div>
       <div class="stage-info">
+        <div class="stage-id" v-if="stage.id">
+          <span>예매 {{ stage.id }}위</span>
+        </div>
         <div class="stage-title">
           {{ stage.stageTitle }}
         </div>
-        <div class="stage-pointAvg" v-if="stage.pointAvg">
+        <div class="stage-pointAvg" v-if="stage.pointAvg >= 0">
           <span>★</span> {{ stage.pointAvg }} ({{ stage.reviewCount }})
         </div>
       </div>
@@ -217,11 +220,19 @@ export default {
   border-bottom: 1px solid rgb(157, 157, 157);
   text-align: left;
 }
-.stage-title {
-  font-weight: bolder;
-  font-size: 1em;
-  text-align: left;
+.stage-id {
+  font-size: 0.85em;
   margin-top: 0.8em;
+}
+.stage-id > span {
+  font-size: 1em;
+  color: rgb(192, 57, 43);
+  font-weight: bold;
+}
+.stage-title {
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 0.4em;
 }
 .stage-pointAvg {
   margin-top: 0.4em;

@@ -6,7 +6,7 @@
         <span>★ </span> {{ this.avg }} ({{ reviewList.length }})
       </div>
     </div>
-    <div class="myreview-list">
+    <div class="myreview-list" v-if="reviewList.length > 0">
       <div
         class="myreview-item"
         v-for="myreview in reviewList"
@@ -41,6 +41,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="myreview-list" v-else>
+      작성된 리뷰가 없습니다.
     </div>
   </div>
 </template>
@@ -100,12 +103,14 @@ export default {
     computedAvg: function() {
       let sum = 0;
       let avg = 0;
-      for (let i = 0; i < this.reviewList.length; i++) {
-        sum += this.reviewList[i].point;
-      }
-      avg = Math.round((sum / this.reviewList.length) * 10) / 10;
+      if (this.reviewList.length > 0) {
+        for (let i = 0; i < this.reviewList.length; i++) {
+          sum += this.reviewList[i].point;
+        }
+        avg = Math.round((sum / this.reviewList.length) * 10) / 10;
 
-      this.avg = avg;
+        this.avg = avg;
+      } else this.avg = 0;
     },
   },
 };

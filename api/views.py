@@ -227,5 +227,6 @@ def MyReviewlist(request, user_Id):
             'point': myReview.point, 
             'created_at': myReview.created_at, 
             'updated_at': myReview.updated_at})
+            
     return JsonResponse(myreview_list, safe=False)
 
